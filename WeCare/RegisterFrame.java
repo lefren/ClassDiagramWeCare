@@ -17,6 +17,8 @@ public class RegisterFrame extends JFrame
     JTextField TF_Numbe;
     JTextField TF_NI;
 
+    JTextField TF_PASS;
+
     public RegisterFrame()
     {
         getContentPane().setLayout(null);
@@ -94,6 +96,33 @@ public class RegisterFrame extends JFrame
         setVisible(true);
         setResizable(true);
     }
+
+    public void Registeruser(){
+        String name = TF_Nam.getText();
+        String age = TF_Ag.getText();
+        String phone = TF_Numbe.getText();
+        String identity = TF_NI.getText();
+        String password = TF_PASS.getText();
+//        String Cofirmpassword = String.valueOf()
+
+        if(name.isEmpty() || age.isEmpty() || phone.isEmpty() || identity.isEmpty() || password.isEmpty()){
+            JOptionPane.showMessageDialog(this, "Please enter all fields", "Try Again", JOptionPane.ERROR_MESSAGE);
+            return;
+        }
+        user = addUserToDB(name,age,phone,identity,password);
+        if(user != null){
+            dispose();
+        }else{
+            JOptionPane.showMessageDialog(this, "Confirm Password does not match", "Try Again", JOptionPane.ERROR_MESSAGE);
+        }
+
+    }
+    public User user;
+    private User addUserToDB(String name, String age, String phone, String identity, String password){
+        User user = null;
+        return user;
+    }
+
     public static void main( String args[] )
     {
         new RegisterFrame();

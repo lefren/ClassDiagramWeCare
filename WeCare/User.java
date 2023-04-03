@@ -5,4 +5,7 @@ public class User {
     public String age;
     public String phone;
     public String identity;
+    public String password;
 }
+
+
