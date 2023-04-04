@@ -77,7 +77,7 @@ public class main {
                 }
 
                 if (rgs.TF_NI.getText().equals("")){
-                    System.out.println("Identity number cannot be empty!");
+                    System.out.println("Password cannot be empty!");
                     nik = 0;
                 }
 
