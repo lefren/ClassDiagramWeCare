@@ -54,7 +54,7 @@ public class RegisterFrame extends JFrame
         L_NI = new JLabel();
         L_NI.setLocation(55,226);
         L_NI.setSize(110,30);
-        L_NI.setText("Identity Number    :");
+        L_NI.setText("Password              :");
         getContentPane().add(L_NI);
 
         L_Age = new JLabel();
