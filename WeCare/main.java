@@ -59,7 +59,8 @@ public class main {
                 int name = 1;
                 int age = 1;
                 int number = 1;
-                int nik = 1;
+                int pass = 1;
+                int conf_pass = 1;
 
                 if (rgs.TF_Nam.getText().equals("")){
                     System.out.println("Name cannot be empty!");
@@ -76,20 +77,22 @@ public class main {
                     number = 0;
                 }
 
-                if (rgs.TF_NI.getText().equals("")){
+                if (rgs.TF_PASS.getText().equals("")){
                     System.out.println("Password cannot be empty!");
-                    nik = 0;
+                    pass = 0;
                 }
 
-                if (name == 1 && age == 1 && nik == 1 && number == 1) {
+                if (rgs.TF_CONF_PASS.getText().equals("")){
+                    System.out.println("Confirm Password cannot be empty!");
+                    conf_pass = 0;
+                }
+
+                if (name == 1 && age == 1 && pass == 1 && conf_pass == 1 && number == 1) {
                     rgs.setVisible(false);
                     System.out.println("Register Successful!");
                     mainF();
                 }
-
             }
         });
-
     }
-
 }
