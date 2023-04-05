@@ -12,7 +12,7 @@ public class main {
     }
 
 //    mainframe
-    public  static void mainF(){
+    public static void mainF(){
         MenuFrame nmf=new MenuFrame();
         nmf.setTitle("MENU");
         nmf.Button_LogPat.addActionListener(new ActionListener() {

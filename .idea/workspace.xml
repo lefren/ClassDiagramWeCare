@@ -6,14 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="1aaec7a7-6e4d-4478-8b85-d2996436fbe4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectOOP.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectOOP.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WeCare/RegisterFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/WeCare/RegisterFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WeCare/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/WeCare/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WeCare/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/WeCare/main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/RegisterFrame$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/RegisterFrame$2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/RegisterFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/RegisterFrame.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/main$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/main$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/main.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

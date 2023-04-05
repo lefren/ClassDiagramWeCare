@@ -147,6 +147,7 @@ public class RegisterFrame extends JDialog
         B_CANCEL.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                main.mainF();
                 dispose();
             }
         });
@@ -203,29 +204,36 @@ public class RegisterFrame extends JDialog
         try {
             Connection conn = DriverManager.getConnection(DB_URL, USERNAME, PASS);
 
-            // Hash the password using SHA-256 algorithm
+            String query = "SELECT * FROM users WHERE nik = ?";
+            PreparedStatement checkStmt = conn.prepareStatement(query);
+            checkStmt.setString(1, nik);
+            ResultSet rs = checkStmt.executeQuery();
+            if (rs.next()) {
+                JOptionPane.showMessageDialog(null,"NIK Already Exist! Please input the correct NIK");
+                return null;
+            }
+
             MessageDigest md = MessageDigest.getInstance("SHA-256");
             md.update(password.getBytes());
             byte[] hashedPassword = md.digest();
 
-            // Convert the hashed password to a hex string
             StringBuilder sb = new StringBuilder();
             for (byte b : hashedPassword) {
                 sb.append(String.format("%02x", b));
             }
             String hashedPasswordStr = sb.toString();
 
-            Statement stmt = conn.createStatement();
-            String sql = "INSERT INTO users (name,age,phone,nik,password)" + "VALUES (?,?,?,?,?)";
-            PreparedStatement preparedStatement = conn.prepareStatement(sql);
-            preparedStatement.setString(1, name);
-            preparedStatement.setString(2, age);
-            preparedStatement.setString(3, phone);
-            preparedStatement.setString(4, nik);
-            preparedStatement.setString(5, hashedPasswordStr);
+            // Insert new user into database
+            String sql = "INSERT INTO users (name,age,phone,nik,password) VALUES (?,?,?,?,?)";
+            PreparedStatement insertStmt = conn.prepareStatement(sql);
+            insertStmt.setString(1, name);
+            insertStmt.setString(2, age);
+            insertStmt.setString(3, phone);
+            insertStmt.setString(4, nik);
+            insertStmt.setString(5, hashedPasswordStr);
 
-            int addedrows = preparedStatement.executeUpdate();
-            if (addedrows > 0) {
+            int addedRows = insertStmt.executeUpdate();
+            if (addedRows > 0) {
                 user = new User();
                 user.name = name;
                 user.age = age;
@@ -233,7 +241,10 @@ public class RegisterFrame extends JDialog
                 user.nik = nik;
                 user.password = hashedPasswordStr;
             }
-            stmt.close();
+
+            rs.close();
+            checkStmt.close();
+            insertStmt.close();
             conn.close();
 
         } catch (SQLException | NoSuchAlgorithmException e) {
@@ -245,7 +256,6 @@ public class RegisterFrame extends JDialog
     public static void main( String args[] )
     {
         RegisterFrame myform = new RegisterFrame();
-//        new RegisterFrame();
         User user = myform.user;
         if(user != null){
             System.out.println("Successfull");
