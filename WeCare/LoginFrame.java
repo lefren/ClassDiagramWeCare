@@ -10,7 +10,7 @@ public class LoginFrame extends JFrame
     JLabel Label_Password;
     JTextField Text_nik;
     JTextField Text_Password;
-    JButton Button_Login;
+    JButton Button_Login, Button_Register;
 
     public LoginFrame()
     {
@@ -43,31 +43,35 @@ public class LoginFrame extends JFrame
 
         Text_nik = new JTextField();
         Text_nik.setLocation(168,140);
-        Text_nik.setSize(160,30);
+        Text_nik.setSize(228,30);
         Text_nik.setText("");
         Text_nik.setColumns(10);
         getContentPane().add(Text_nik);
 
         Text_Password = new JPasswordField();
         Text_Password.setLocation(168,182);
-        Text_Password.setSize(160,30);
+        Text_Password.setSize(228,30);
         Text_Password.setText("");
         Text_Password.setColumns(10);
         getContentPane().add(Text_Password);
 
         Button_Login = new JButton();
         Button_Login.setLocation(168,240);
-        Button_Login.setSize(120,30);
+        Button_Login.setSize(100,30);
         Button_Login.setText("Login");
         getContentPane().add(Button_Login);
 
+        Button_Register = new JButton();
+        Button_Register.setLocation(296,240);
+        Button_Register.setSize(100,30);
+        Button_Register.setText("Register");
+        getContentPane().add(Button_Register);
+
         setTitle("We Care Application");
-        setSize(400,400);
+        setSize(500,500);
         setLocationRelativeTo(null);
         setVisible(true);
         setResizable(false);
-
-
     }
     public static void main( String args[] )
     {

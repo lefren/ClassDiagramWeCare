@@ -206,7 +206,6 @@ public class RegisterFrame extends JDialog
         try {
             Connection conn = DriverManager.getConnection(DB_URL, USERNAME, PASS);
 
-            // Check if NIK already exists
             String query = "SELECT * FROM users WHERE nik = ?";
             PreparedStatement checkStmt = conn.prepareStatement(query);
             checkStmt.setString(1, nik);
@@ -216,31 +215,26 @@ public class RegisterFrame extends JDialog
                 return null;
             }
 
-            // Check if NIK length is at least 16
             if (nik.length() < 16) {
                 JOptionPane.showMessageDialog(null, "NIK must be at least 16 characters long");
                 return null;
             }
 
-            // Validate name
             if (!name.matches("^[a-zA-Z ]+$")) {
                 JOptionPane.showMessageDialog(null, "Name must contain only letters and spaces");
                 return null;
             }
 
-            // Validate phone number
             if (!phone.matches("^\\d{10,}$")) {
                 JOptionPane.showMessageDialog(null, "Phone number must contain at least 10 digits");
                 return null;
             }
 
-            // Validate password
             if (!password.matches("^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d).+$")) {
                 JOptionPane.showMessageDialog(null, "Password must contain at least one lowercase letter, one uppercase letter, and one number");
                 return null;
             }
 
-            // Hash password using SHA-256
             MessageDigest md = MessageDigest.getInstance("SHA-256");
             md.update(password.getBytes(StandardCharsets.UTF_8));
             byte[] hashedPassword = md.digest();
@@ -251,7 +245,6 @@ public class RegisterFrame extends JDialog
             }
             String hashedPasswordStr = sb.toString();
 
-            // Insert new user into database
             String sql = "INSERT INTO users (name, age, phone, nik, password) VALUES (?, ?, ?, ?, ?)";
             PreparedStatement insertStmt = conn.prepareStatement(sql);
             insertStmt.setString(1, name);
