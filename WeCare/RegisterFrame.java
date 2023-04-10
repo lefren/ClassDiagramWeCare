@@ -6,6 +6,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.nio.charset.StandardCharsets;
 import java.sql.*;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
@@ -187,6 +188,7 @@ public class RegisterFrame extends JDialog
         user = addUserToDB(name,age,phone,nik,password);
         if(user != null){
             dispose();
+            new LoginFrame();
         }else{
             JOptionPane.showMessageDialog(this,
                     "Confirm Password does not match",
@@ -204,17 +206,43 @@ public class RegisterFrame extends JDialog
         try {
             Connection conn = DriverManager.getConnection(DB_URL, USERNAME, PASS);
 
+            // Check if NIK already exists
             String query = "SELECT * FROM users WHERE nik = ?";
             PreparedStatement checkStmt = conn.prepareStatement(query);
             checkStmt.setString(1, nik);
             ResultSet rs = checkStmt.executeQuery();
             if (rs.next()) {
-                JOptionPane.showMessageDialog(null,"NIK Already Exist! Please input the correct NIK");
+                JOptionPane.showMessageDialog(null, "NIK Already Exist! Please input the correct NIK");
                 return null;
             }
 
+            // Check if NIK length is at least 16
+            if (nik.length() < 16) {
+                JOptionPane.showMessageDialog(null, "NIK must be at least 16 characters long");
+                return null;
+            }
+
+            // Validate name
+            if (!name.matches("^[a-zA-Z ]+$")) {
+                JOptionPane.showMessageDialog(null, "Name must contain only letters and spaces");
+                return null;
+            }
+
+            // Validate phone number
+            if (!phone.matches("^\\d{10,}$")) {
+                JOptionPane.showMessageDialog(null, "Phone number must contain at least 10 digits");
+                return null;
+            }
+
+            // Validate password
+            if (!password.matches("^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d).+$")) {
+                JOptionPane.showMessageDialog(null, "Password must contain at least one lowercase letter, one uppercase letter, and one number");
+                return null;
+            }
+
+            // Hash password using SHA-256
             MessageDigest md = MessageDigest.getInstance("SHA-256");
-            md.update(password.getBytes());
+            md.update(password.getBytes(StandardCharsets.UTF_8));
             byte[] hashedPassword = md.digest();
 
             StringBuilder sb = new StringBuilder();
@@ -224,10 +252,10 @@ public class RegisterFrame extends JDialog
             String hashedPasswordStr = sb.toString();
 
             // Insert new user into database
-            String sql = "INSERT INTO users (name,age,phone,nik,password) VALUES (?,?,?,?,?)";
+            String sql = "INSERT INTO users (name, age, phone, nik, password) VALUES (?, ?, ?, ?, ?)";
             PreparedStatement insertStmt = conn.prepareStatement(sql);
             insertStmt.setString(1, name);
-            insertStmt.setString(2, age);
+            insertStmt.setInt(2, Integer.parseInt(age));
             insertStmt.setString(3, phone);
             insertStmt.setString(4, nik);
             insertStmt.setString(5, hashedPasswordStr);
@@ -247,7 +275,7 @@ public class RegisterFrame extends JDialog
             insertStmt.close();
             conn.close();
 
-        } catch (SQLException | NoSuchAlgorithmException e) {
+        } catch (SQLException | NoSuchAlgorithmException | NumberFormatException e) {
             e.printStackTrace();
         }
         return user;

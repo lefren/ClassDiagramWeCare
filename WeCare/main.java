@@ -42,7 +42,6 @@ public class main {
             @Override
             public void actionPerformed(ActionEvent e) {
                 lgn.setVisible(false);
-
             }
         });
     }
