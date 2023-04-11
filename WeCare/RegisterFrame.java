@@ -215,7 +215,7 @@ public class RegisterFrame extends JDialog
                 return null;
             }
 
-            if (nik.length() < 16) {
+            if (nik.length() <= 16) {
                 JOptionPane.showMessageDialog(null, "NIK must be at least 16 characters long");
                 return null;
             }
