@@ -5,18 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1aaec7a7-6e4d-4478-8b85-d2996436fbe4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/View/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/src/main/java/com/example/view/HelloApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/src/main/java/com/example/view/HelloController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/src/main/java/module-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/src/main/resources/com/example/view/hello-view.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/src/main/resources/com/example/view/item.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeCare/LoginFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/WeCare/LoginFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeCare/RegisterFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/WeCare/RegisterFrame.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

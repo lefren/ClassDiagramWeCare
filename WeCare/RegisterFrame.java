@@ -273,15 +273,4 @@ public class RegisterFrame extends JDialog
         }
         return user;
     }
-
-    public static void main( String args[] )
-    {
-        RegisterFrame myform = new RegisterFrame();
-        User user = myform.user;
-        if(user != null){
-            System.out.println("Successfull");
-        }else{
-            System.out.println("Register canceled!");
-        }
-    }
 }
