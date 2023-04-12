@@ -1,7 +1,11 @@
 package OOP.JFRAME;
 
 import javax.swing.*;
+import javax.swing.plaf.nimbus.State;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.sql.*;
 
 public class LoginFrame extends JFrame
 {
@@ -9,7 +13,7 @@ public class LoginFrame extends JFrame
     JLabel Label_nik;
     JLabel Label_Password;
     JTextField Text_nik;
-    JTextField Text_Password;
+    JPasswordField Text_Password;
     JButton Button_Login, Button_Register;
 
     public LoginFrame()
@@ -67,11 +71,72 @@ public class LoginFrame extends JFrame
         Button_Register.setText("Register");
         getContentPane().add(Button_Register);
 
+        Button_Login.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                String nik = Text_nik.getText();
+                String pass = String.valueOf(Text_Password.getPassword());
+
+                user = getAuthenticatedUser(nik,pass);
+
+                if (user != null){
+                    dispose();
+                }else{
+                    JOptionPane.showMessageDialog(LoginFrame.this,
+                            "NIK or password Invalid!",
+                            "Try again",
+                            JOptionPane.ERROR_MESSAGE);
+                }
+            }
+        });
+        Button_Register.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                new RegisterFrame();
+                dispose();
+            }
+        });
+
         setTitle("We Care Application");
         setSize(500,500);
         setLocationRelativeTo(null);
         setVisible(true);
         setResizable(false);
+    }
+    public User user;
+    private User getAuthenticatedUser(String nik, String pass){
+        User user = null;
+        final String DB_URL = "jdbc:mysql://localhost/projectoop?serverTimezone=UTC";
+        final String USERNAME = "root";
+        final String PASS = "";
+
+        try{
+            Connection conn = DriverManager.getConnection(DB_URL, USERNAME, PASS);
+
+            Statement statement = conn.createStatement();
+            String sql = "SELECT * FROM users WHERE nik=? AND password=?";
+            PreparedStatement preparedStatement = conn.prepareStatement(sql);
+            preparedStatement.setString(1, nik);
+            preparedStatement.setString(2, pass);
+
+            ResultSet resultSet = preparedStatement.executeQuery();
+
+            if(resultSet.next()){
+                user = new User();
+                user.name = resultSet.getString("name");
+                user.age = resultSet.getString("age");
+                user.phone = resultSet.getString("phone");
+                user.nik = resultSet.getString("nik");
+                user.password = resultSet.getString("password");
+            }
+
+            statement.close();
+            conn.close();
+
+        }catch(Exception e){
+            e.printStackTrace();
+        }
+        return user;
     }
     public static void main( String args[] )
     {

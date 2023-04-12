@@ -26,8 +26,8 @@ public class RegisterFrame extends JDialog
     JTextField TF_Ag;
     JTextField TF_Numbe;
     JTextField TF_NIK;
-    JTextField TF_PASS;
-    JTextField TF_CONF_PASS;
+    JPasswordField TF_PASS;
+    JPasswordField TF_CONF_PASS;
 
     public RegisterFrame()
     {
@@ -112,14 +112,14 @@ public class RegisterFrame extends JDialog
         TF_NIK.setColumns(10);
         getContentPane().add(TF_NIK);
 
-        TF_PASS = new JTextField();
+        TF_PASS = new JPasswordField();
         TF_PASS.setLocation(190,270);
         TF_PASS.setSize(230,30);
         TF_PASS.setText("");
         TF_PASS.setColumns(10);
         getContentPane().add(TF_PASS);
 
-        TF_CONF_PASS = new JTextField();
+        TF_CONF_PASS = new JPasswordField();
         TF_CONF_PASS.setLocation(190,315);
         TF_CONF_PASS.setSize(230,30);
         TF_CONF_PASS.setText("");
@@ -148,7 +148,7 @@ public class RegisterFrame extends JDialog
         B_CANCEL.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                main.mainF();
+                new LoginFrame();
                 dispose();
             }
         });
@@ -166,8 +166,8 @@ public class RegisterFrame extends JDialog
         String age = TF_Ag.getText();
         String phone = TF_Numbe.getText();
         String nik = TF_NIK.getText();
-        String password = TF_PASS.getText();
-        String confirm_password = TF_CONF_PASS.getText();
+        String password = String.valueOf(TF_PASS.getPassword());
+        String confirm_password = String.valueOf(TF_CONF_PASS.getPassword());
 
         if(name.isEmpty() || age.isEmpty() || phone.isEmpty() || nik.isEmpty() || password.isEmpty() || confirm_password.isEmpty()){
             JOptionPane.showMessageDialog(this,
