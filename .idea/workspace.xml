@@ -5,14 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1aaec7a7-6e4d-4478-8b85-d2996436fbe4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/DashboardAdmin.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/DashboardUser.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/src/main/java/com/example/view/HelloApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/src/main/java/com/example/view/HelloController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/src/main/java/module-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/src/main/resources/com/example/view/hello-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WeCare/DashboardAdmin.java" beforeDir="false" afterPath="$PROJECT_DIR$/WeCare/DashboardAdmin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WeCare/DashboardUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/WeCare/DashboardUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/LoginFrame$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/LoginFrame$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/LoginFrame$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/LoginFrame$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/LoginFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/LoginFrame.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,19 +45,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/ProjectOOP/mysql-connector-j-8.0.32.jar&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "dart.analysis.tool.window.visible": "false",
+    "jdk.selected.JAVA_MODULE": "19",
+    "last_opened_file_path": "C:/ProjectOOP/mysql-connector-j-8.0.32.jar",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.JavaFX",
+    "show.migrate.to.gradle.popup": "false"
   }
-}</component>
+}]]></component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="ProjectOOP" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="ProjectOOP" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -63,5 +84,9 @@
       <updated>1680484241306</updated>
     </task>
     <servers />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
