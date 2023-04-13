@@ -28,7 +28,6 @@ public class main {
             public void actionPerformed(ActionEvent e) {
                 nmf.setVisible(false);
                 register();
-
             }
         });
     }

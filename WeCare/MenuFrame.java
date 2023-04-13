@@ -45,8 +45,6 @@ public class MenuFrame extends JFrame
         setSize(400,400);
         setVisible(true);
         setResizable(true);
-
-
     }
     public static void main( String args[] )
     {

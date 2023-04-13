@@ -20,7 +20,7 @@ public class LoginFrame extends JFrame
     {
         getContentPane().setLayout(null);
         setupGUI();
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(DISPOSE_ON_CLOSE);
     }
     void setupGUI()
     {
@@ -80,6 +80,7 @@ public class LoginFrame extends JFrame
                 user = getAuthenticatedUser(nik,pass);
 
                 if (user != null){
+                    new maind();
                     dispose();
                 }else{
                     JOptionPane.showMessageDialog(LoginFrame.this,
@@ -137,5 +138,10 @@ public class LoginFrame extends JFrame
             e.printStackTrace();
         }
         return user;
+    }
+
+    public static void main(String[] args) {
+
+        new LoginFrame();
     }
 }
