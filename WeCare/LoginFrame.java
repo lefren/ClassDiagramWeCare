@@ -80,7 +80,7 @@ public class LoginFrame extends JFrame
                 user = getAuthenticatedUser(nik,pass);
 
                 if (user != null){
-                    new maind();
+//                    new maind();
                     dispose();
                 }else{
                     JOptionPane.showMessageDialog(LoginFrame.this,
