@@ -1,2 +1,4 @@
-package OOP.JFRAME.controller;public class controller {
+package OOP.JFRAME.controller;
+
+public class controller {
 }
