@@ -15,7 +15,7 @@ public class DashboardAdmin extends Application {
     }
 
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(DashboardAdmin.class.getResource("View/Register.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(DashboardAdmin.class.getResource("View/Login.fxml"));
         Scene scene = new Scene((Parent)fxmlLoader.load());
         stage.setTitle("We care application");
         stage.setScene(scene);

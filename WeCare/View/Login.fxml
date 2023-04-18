@@ -13,8 +13,7 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-
-<SplitPane dividerPositions="0.5" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+<SplitPane dividerPositions="0.5" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="OOP.JFRAME.controller.Logincontroller">
    <items>
       <Pane prefHeight="200.0" prefWidth="200.0" />
       <VBox alignment="CENTER_LEFT" prefHeight="398.0" prefWidth="260.0" spacing="10.0">
@@ -26,14 +25,14 @@
             </Label>
             <Line endX="-30.707107543945312" endY="-8.690357208251953E-5" startX="-100.0" />
             <Label text="NIK" />
-            <TextField style="-fx-border-color: #000; -fx-border-radius: 40; -fx-background-color: transparent;" />
+            <TextField fx:id="lognik" promptText="Nomor Induk Kependudukan" style="-fx-border-color: #000; -fx-border-radius: 40; -fx-background-color: transparent;" />
             <Label text="Password" />
-            <PasswordField style="-fx-border-color: #000; -fx-background-color: transparent; -fx-border-radius: 40;" />
-            <CheckBox mnemonicParsing="false" text="Remember me" />
-            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="349.0" style="-fx-background-color: #7489ce; -fx-background-radius: 40;" text="Sign In" textFill="WHITE" />
+            <PasswordField fx:id="logpass" promptText="Password" style="-fx-border-color: #000; -fx-background-color: transparent; -fx-border-radius: 40;" />
+            <CheckBox mnemonicParsing="false" text="Remember me?" />
+            <Button fx:id="logsigninbtn" mnemonicParsing="false" onAction="#logsignin" prefHeight="25.0" prefWidth="349.0" style="-fx-background-color: #7489ce; -fx-background-radius: 40;" text="Sign In" textFill="WHITE" />
             <Label contentDisplay="RIGHT" text="Don't have an account?" textFill="#060517">
                <graphic>
-                  <Hyperlink alignment="CENTER_RIGHT" contentDisplay="RIGHT" text="Sign Up" />
+                  <Hyperlink fx:id="logsignup" alignment="CENTER_RIGHT" contentDisplay="RIGHT" onAction="#logregister" text="Sign Up" />
                </graphic>
             </Label>
          </children>

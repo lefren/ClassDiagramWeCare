@@ -13,10 +13,10 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<SplitPane dividerPositions="0.5" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="584.0" prefWidth="906.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/19">
+<SplitPane dividerPositions="0.5" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="584.0" prefWidth="906.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="OOP.JFRAME.controller.Registercontroller">
    <items>
       <Pane prefHeight="200.0" prefWidth="200.0" />
-      <VBox alignment="CENTER_LEFT" prefHeight="584.0" prefWidth="298.0" spacing="10.0">
+      <VBox alignment="CENTER_LEFT" prefHeight="643.0" prefWidth="449.0" spacing="10.0">
          <children>
             <Label text="Sign Up">
                <font>
@@ -25,22 +25,22 @@
             </Label>
             <Line endX="-7.5" fill="BLACK" startX="-100.0" />
             <Label text="Full Name" />
-            <TextField promptText="Nama Panjang" style="-fx-background-color: transparent; -fx-border-color: #000; -fx-border-radius: 40;" />
+            <TextField fx:id="regtxtname" promptText="Nama Panjang" style="-fx-background-color: transparent; -fx-border-color: #000; -fx-border-radius: 40;" />
             <Label text="Age" />
-            <TextField promptText="Umur" style="-fx-background-color: transparent; -fx-border-color: #000; -fx-border-radius: 40;" />
+            <TextField fx:id="regtxtage" promptText="Umur" style="-fx-background-color: transparent; -fx-border-color: #000; -fx-border-radius: 40;" />
             <Label text="Phone Number" />
-            <TextField promptText="Nomor Handphone" style="-fx-background-color: transparent; -fx-border-color: #000; -fx-border-radius: 40;" />
+            <TextField fx:id="regtxtphonenum" promptText="Nomor Handphone" style="-fx-background-color: transparent; -fx-border-color: #000; -fx-border-radius: 40;" />
             <Label text="NIK" />
-            <TextField promptText="Nomor Induk Kependudukan" style="-fx-background-color: transparent; -fx-border-color: #000; -fx-border-radius: 40;" />
+            <TextField fx:id="regtxtnik" promptText="Nomor Induk Kependudukan" style="-fx-background-color: transparent; -fx-border-color: #000; -fx-border-radius: 40;" />
             <Label text="Password" />
-            <PasswordField promptText="Password" style="-fx-background-color: transparent; -fx-border-color: #000; -fx-border-radius: 40;" />
+            <PasswordField fx:id="regtxtpass" promptText="Password" style="-fx-background-color: transparent; -fx-border-color: #000; -fx-border-radius: 40;" />
             <Label text="Confirm Password" />
-            <PasswordField promptText="Konfirmasi Password" style="-fx-background-color: transparent; -fx-border-color: #000; -fx-border-radius: 40;" />
+            <PasswordField fx:id="regtxtconfpass" promptText="Konfirmasi Password" style="-fx-background-color: transparent; -fx-border-color: #000; -fx-border-radius: 40;" />
             <CheckBox mnemonicParsing="false" text="Do you agree to the Terms and Condition?" />
-            <HBox prefHeight="33.0" prefWidth="449.0" spacing="30.0">
+            <HBox prefHeight="1.0" prefWidth="369.0" spacing="30.0">
                <children>
-                  <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="182.0" style="-fx-background-color: D06AB7; -fx-background-radius: 40;" text="Sign Up" textFill="WHITE" />
-                  <Button mnemonicParsing="false" prefHeight="27.0" prefWidth="182.0" style="-fx-background-color: transparent; -fx-border-color: #d761a7; -fx-border-radius: 40;" text="Sign In" />
+                  <Button fx:id="regsignupbtn" mnemonicParsing="false" onAction="#regsignup" prefHeight="35.0" prefWidth="170.0" style="-fx-background-color: D06AB7; -fx-background-radius: 40;" text="Sign Up" textFill="WHITE" />
+                  <Button fx:id="regsigninbtn" mnemonicParsing="false" onAction="#regsignin" prefHeight="47.0" prefWidth="176.0" style="-fx-background-color: transparent; -fx-border-color: #d761a7; -fx-border-radius: 40;" text="Sign In" />
                </children>
             </HBox>
          </children>
