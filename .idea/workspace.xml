@@ -5,8 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1aaec7a7-6e4d-4478-8b85-d2996436fbe4" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/WeCare/View/Login.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WeCare/View/Register.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeCare/DashboardAdmin.java" beforeDir="false" afterPath="$PROJECT_DIR$/WeCare/DashboardAdmin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeCare/DashboardUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/WeCare/DashboardUser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WeCare/View/DashboardAdmin.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/WeCare/View/DashboardAdmin.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeCare/controller/controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/WeCare/controller/controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/DashboardAdmin.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/DashboardAdmin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/View/DashboardAdmin.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/View/DashboardAdmin.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/controller/controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/controller/controller.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,10 +42,10 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="module-info" />
-        <option value="JavaFXApplication" />
         <option value="HTML File" />
-        <option value="FxmlFile" />
         <option value="Class" />
+        <option value="JavaFXApplication" />
+        <option value="FxmlFile" />
       </list>
     </option>
   </component>
@@ -67,6 +75,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;19&quot;,
     &quot;last_opened_file_path&quot;: &quot;E:/ProjectOOP/jar/fontawesomefx-8.0.1.jar.zip&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,

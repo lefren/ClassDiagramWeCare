@@ -11,12 +11,13 @@ import java.io.IOException;
 public class DashboardAdmin extends Application {
 
     public DashboardAdmin() {
+        
     }
 
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(DashboardAdmin.class.getResource("View/DashboardAdmin.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(DashboardAdmin.class.getResource("View/Register.fxml"));
         Scene scene = new Scene((Parent)fxmlLoader.load());
-        stage.setTitle("Hello!");
+        stage.setTitle("We care application");
         stage.setScene(scene);
         stage.show();
     }

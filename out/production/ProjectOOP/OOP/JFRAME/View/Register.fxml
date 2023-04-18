@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<SplitPane dividerPositions="0.5" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="584.0" prefWidth="906.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/19">
+   <items>
+      <Pane prefHeight="200.0" prefWidth="200.0" />
+      <VBox alignment="CENTER_LEFT" prefHeight="584.0" prefWidth="298.0" spacing="10.0">
+         <children>
+            <Label text="Sign Up">
+               <font>
+                  <Font name="Arial Bold" size="24.0" />
+               </font>
+            </Label>
+            <Line endX="-7.5" fill="BLACK" startX="-100.0" />
+            <Label text="Full Name" />
+            <TextField promptText="Nama Panjang" style="-fx-background-color: transparent; -fx-border-color: #000; -fx-border-radius: 40;" />
+            <Label text="Age" />
+            <TextField promptText="Umur" style="-fx-background-color: transparent; -fx-border-color: #000; -fx-border-radius: 40;" />
+            <Label text="Phone Number" />
+            <TextField promptText="Nomor Handphone" style="-fx-background-color: transparent; -fx-border-color: #000; -fx-border-radius: 40;" />
+            <Label text="NIK" />
+            <TextField promptText="Nomor Induk Kependudukan" style="-fx-background-color: transparent; -fx-border-color: #000; -fx-border-radius: 40;" />
+            <Label text="Password" />
+            <PasswordField promptText="Password" style="-fx-background-color: transparent; -fx-border-color: #000; -fx-border-radius: 40;" />
+            <Label text="Confirm Password" />
+            <PasswordField promptText="Konfirmasi Password" style="-fx-background-color: transparent; -fx-border-color: #000; -fx-border-radius: 40;" />
+            <CheckBox mnemonicParsing="false" text="Do you agree to the Terms and Condition?" />
+            <HBox prefHeight="33.0" prefWidth="449.0" spacing="30.0">
+               <children>
+                  <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="182.0" style="-fx-background-color: D06AB7; -fx-background-radius: 40;" text="Sign Up" textFill="WHITE" />
+                  <Button mnemonicParsing="false" prefHeight="27.0" prefWidth="182.0" style="-fx-background-color: transparent; -fx-border-color: #d761a7; -fx-border-radius: 40;" text="Sign In" />
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets left="40.0" right="40.0" />
+         </padding>
+      </VBox>
+   </items>
+</SplitPane>
