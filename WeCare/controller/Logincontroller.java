@@ -15,7 +15,7 @@ import java.io.IOException;
 import java.util.Objects;
 
 public class Logincontroller {
-    private Stage stage;
+
     @FXML
     private TextField lognik;
 
