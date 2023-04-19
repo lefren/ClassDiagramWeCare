@@ -5,16 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1aaec7a7-6e4d-4478-8b85-d2996436fbe4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/WeCare/View/DashboardDoctor.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WeCare/View/DashboardHospital.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WeCare/View/DashboardPatient.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WeCare/View/DashboardAdmin.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/WeCare/View/DashboardAdmin.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WeCare/controller/Logincontroller.java" beforeDir="false" afterPath="$PROJECT_DIR$/WeCare/controller/Logincontroller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WeCare/controller/controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/WeCare/controller/controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/View/DashboardAdmin.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/View/DashboardAdmin.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/controller/Logincontroller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/controller/Logincontroller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/controller/controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/controller/controller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeCare/View/DashboardDoctor.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/WeCare/View/DashboardDoctor.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeCare/View/DashboardHospital.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/WeCare/View/DashboardHospital.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeCare/View/DashboardPatient.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/WeCare/View/DashboardPatient.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
