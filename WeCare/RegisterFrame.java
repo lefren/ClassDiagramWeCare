@@ -6,10 +6,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.nio.charset.StandardCharsets;
 import java.sql.*;
-import java.security.MessageDigest;
-import java.security.NoSuchAlgorithmException;
 
 public class RegisterFrame extends JDialog
 {
@@ -235,15 +232,6 @@ public class RegisterFrame extends JDialog
                 return null;
             }
 
-            MessageDigest md = MessageDigest.getInstance("SHA-256");
-            md.update(password.getBytes(StandardCharsets.UTF_8));
-            byte[] hashedPassword = md.digest();
-
-            StringBuilder sb = new StringBuilder();
-            for (byte b : hashedPassword) {
-                sb.append(String.format("%02x", b));
-            }
-            String hashedPasswordStr = sb.toString();
 
             String sql = "INSERT INTO users (name, age, phone, nik, password) VALUES (?, ?, ?, ?, ?)";
             PreparedStatement insertStmt = conn.prepareStatement(sql);
@@ -251,7 +239,7 @@ public class RegisterFrame extends JDialog
             insertStmt.setInt(2, Integer.parseInt(age));
             insertStmt.setString(3, phone);
             insertStmt.setString(4, nik);
-            insertStmt.setString(5, hashedPasswordStr);
+            insertStmt.setString(5, password);
 
             int addedRows = insertStmt.executeUpdate();
             if (addedRows > 0) {
@@ -260,7 +248,7 @@ public class RegisterFrame extends JDialog
                 user.age = age;
                 user.phone = phone;
                 user.nik = nik;
-                user.password = hashedPasswordStr;
+                user.password = password;
             }
 
             rs.close();
@@ -268,7 +256,7 @@ public class RegisterFrame extends JDialog
             insertStmt.close();
             conn.close();
 
-        } catch (SQLException | NoSuchAlgorithmException | NumberFormatException e) {
+        } catch (SQLException | NumberFormatException e) {
             e.printStackTrace();
         }
         return user;

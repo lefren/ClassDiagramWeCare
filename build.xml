@@ -1713,5 +1713,4 @@ See also com.mysql.cj.conf.PropertyDefinitions.SYSP_* variables for other test o
         </move>
     </target>
 
-
 </project>

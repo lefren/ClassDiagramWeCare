@@ -6,15 +6,18 @@
   <component name="ChangeListManager">
     <list default="true" id="1aaec7a7-6e4d-4478-8b85-d2996436fbe4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WeCare/View/DashboardAdmin.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/WeCare/View/DashboardAdmin.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WeCare/View/DashboardDoctor.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/WeCare/View/DashboardDoctor.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WeCare/View/DashboardHospital.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/WeCare/View/DashboardHospital.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WeCare/View/DashboardPatient.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/WeCare/View/DashboardPatient.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeCare/RegisterFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/WeCare/RegisterFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeCare/controller/Logincontroller.java" beforeDir="false" afterPath="$PROJECT_DIR$/WeCare/controller/Logincontroller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeCare/controller/Registercontroller.java" beforeDir="false" afterPath="$PROJECT_DIR$/WeCare/controller/Registercontroller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
   </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$/demo">
