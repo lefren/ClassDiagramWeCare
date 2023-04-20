@@ -5,11 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1aaec7a7-6e4d-4478-8b85-d2996436fbe4" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/WeCare/View/DashboardPatientHome.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/sample-removebg-preview.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/sample.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WeCare/RegisterFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/WeCare/RegisterFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeCare/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/WeCare/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeCare/View/DashboardDoctor.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/WeCare/View/DashboardDoctor.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeCare/View/DashboardPatient.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/WeCare/View/DashboardPatient.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeCare/View/Login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/WeCare/View/Login.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WeCare/controller/Logincontroller.java" beforeDir="false" afterPath="$PROJECT_DIR$/WeCare/controller/Logincontroller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WeCare/controller/Registercontroller.java" beforeDir="false" afterPath="$PROJECT_DIR$/WeCare/controller/Registercontroller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img_1_1677569465518.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/View/Login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/View/Login.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/controller/Logincontroller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/controller/Logincontroller.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -6,6 +6,8 @@ public class User {
     public String phone;
     public String nik;
     public String password;
+    public String role;
+
 }
 
 

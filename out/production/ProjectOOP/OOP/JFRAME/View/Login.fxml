@@ -15,7 +15,7 @@
 
 <SplitPane dividerPositions="0.5" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="OOP.JFRAME.controller.Logincontroller">
    <items>
-      <Pane prefHeight="200.0" prefWidth="200.0" />
+      <Pane opacity="0.78" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #2b58bf;" />
       <VBox alignment="CENTER_LEFT" prefHeight="398.0" prefWidth="260.0" spacing="10.0">
          <children>
             <Label text="LOGIN">

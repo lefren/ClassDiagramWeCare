@@ -34,10 +34,6 @@ public class Logincontroller {
         Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("../view/register.fxml")));
         Scene scene = new Scene(root);
 
-        Registercontroller controller = new Registercontroller();
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("../view/register.fxml"));
-        loader.setController(controller);
-
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         stage.setScene(scene);
         stage.show();
@@ -52,10 +48,6 @@ public class Logincontroller {
         if(user != null){
             Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("../view/dashboardadmin.fxml")));
             Scene scene = new Scene(root);
-
-            Registercontroller controller = new Registercontroller();
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("../view/dashboardadmin.fxml"));
-            loader.setController(controller);
 
             Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
             stage.setScene(scene);
@@ -82,7 +74,7 @@ public class Logincontroller {
             Connection conn = DriverManager.getConnection(DB_URL, USERNAME, PASS);
 
             Statement statement = conn.createStatement();
-            String sql = "SELECT * FROM users WHERE nik=? AND password=?";
+            String sql = "SELECT * FROM users WHERE nik=? AND password=?" ;
             PreparedStatement preparedStatement = conn.prepareStatement(sql);
             preparedStatement.setString(1, nik);
             preparedStatement.setString(2, pass);
@@ -96,6 +88,7 @@ public class Logincontroller {
                 user.phone = resultSet.getString("phone");
                 user.nik = resultSet.getString("nik");
                 user.password = resultSet.getString("password");
+                user.role = resultSet.getString("roles");
             }
 
             statement.close();
