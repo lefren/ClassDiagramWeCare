@@ -13,46 +13,72 @@
 
 <BorderPane prefHeight="700.0" prefWidth="1145.0" style="-fx-border-color: #fff;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="OOP.JFRAME.controller.controller">
    <left>
-      <VBox alignment="TOP_CENTER" prefHeight="637.0" prefWidth="171.0" spacing="15.0" style="-fx-background-color: #243292;" BorderPane.alignment="CENTER">
+      <VBox alignment="TOP_CENTER" prefHeight="637.0" prefWidth="171.0" spacing="15.0" style="-fx-background-color: #008081;" BorderPane.alignment="CENTER">
          <children>
-            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="268.0" style="-fx-background-color: transparent;" text="Home" textFill="#fdfefc">
+            <Label text="LOGO" textFill="WHITE">
                <font>
-                  <Font name="System Bold" size="14.0" />
+                  <Font size="40.0" />
                </font>
-            </Button>
-            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="177.0" style="-fx-background-color: transparent;" text="Doctor" textFill="#fdfefc">
-               <font>
-                  <Font size="14.0" />
-               </font>
-            </Button>
-            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="223.0" style="-fx-background-color: transparent;" text="Patient" textFill="#fdfefc">
-               <font>
-                  <Font size="14.0" />
-               </font>
-            </Button>
-            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="329.0" style="-fx-background-color: transparent;" text="Hospital" textFill="#fdfefc">
-               <font>
-                  <Font size="14.0" />
-               </font>
-            </Button>
-            <VBox alignment="BOTTOM_CENTER" prefHeight="443.0" prefWidth="151.0">
+            </Label>
+            <VBox prefHeight="488.0" prefWidth="151.0" spacing="10.0">
                <children>
-                  <Button alignment="BOTTOM_CENTER" contentDisplay="BOTTOM" mnemonicParsing="false" prefHeight="25.0" prefWidth="490.0" style="-fx-background-color: transparent;" text="Settings" textFill="#fdfefc">
-                     <VBox.margin>
-                        <Insets />
-                     </VBox.margin>
+                  <Label prefHeight="17.0" prefWidth="192.0" text="Main Menu">
+                     <padding>
+                        <Insets left="8.0" />
+                     </padding>
+                  </Label>
+                  <Button alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="30.0" prefWidth="178.0" style="-fx-background-color: transparent;" text="Overview" textFill="#fdfefc">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Button alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="25.0" prefWidth="223.0" style="-fx-background-color: transparent;" text="Patient" textFill="#fdfefc">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Button alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="25.0" prefWidth="223.0" style="-fx-background-color: transparent;" text="Appointment" textFill="#fdfefc">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Label prefHeight="17.0" prefWidth="281.0" text="Other Menu">
+                     <padding>
+                        <Insets left="8.0" />
+                     </padding>
+                  </Label>
+                  <Button alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="25.0" prefWidth="177.0" style="-fx-background-color: transparent;" text="Doctor" textFill="#fdfefc">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Button alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="25.0" prefWidth="329.0" style="-fx-background-color: transparent;" text="Hospital" textFill="#fdfefc">
                      <font>
                         <Font size="14.0" />
                      </font>
                   </Button>
                </children>
+               <padding>
+                  <Insets left="5.0" right="5.0" />
+               </padding>
             </VBox>
+            <VBox alignment="BOTTOM_CENTER" prefHeight="349.0" prefWidth="151.0" />
+            <Button alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="25.0" prefWidth="177.0" style="-fx-background-color: transparent;" text="Help Desk" textFill="#fdfefc">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="25.0" prefWidth="177.0" style="-fx-background-color: transparent;" text="Settings" textFill="#fdfefc">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
          </children>
          <BorderPane.margin>
             <Insets />
          </BorderPane.margin>
          <padding>
-            <Insets bottom="10.0" left="10.0" right="10.0" top="40.0" />
+            <Insets bottom="10.0" left="10.0" right="10.0" top="30.0" />
          </padding>
       </VBox>
    </left>
@@ -68,7 +94,7 @@
                   </Label>
                   <HBox alignment="CENTER_RIGHT" prefHeight="57.0" prefWidth="700.0">
                      <children>
-                        <Hyperlink fx:id="admlogoutbtn" onAction="#admlogout" text="Logout">
+                        <Hyperlink fx:id="admlogoutbtn" onAction="#admlogout" text="Logout" textFill="#008081">
                            <font>
                               <Font size="14.0" />
                            </font>
@@ -97,41 +123,41 @@
                      <center>
                         <VBox prefHeight="200.0" prefWidth="100.0" spacing="10.0" style="-fx-background-color: #fff; -fx-background-radius: 10;" BorderPane.alignment="CENTER">
                            <children>
-                              <Label text="Full Name">
+                              <Label text="Full Name" textFill="#2d3539">
                                  <font>
                                     <Font size="14.0" />
                                  </font>
                               </Label>
-                              <TextField fx:id="admtxtname" promptText="Nama Lengkap" style="-fx-background-color: transparent; -fx-border-color: #243292; -fx-border-radius: 20;" />
-                              <Label text="Phone Number">
+                              <TextField fx:id="admtxtname" promptText="Nama Lengkap" style="-fx-background-color: transparent; -fx-border-color: #008081; -fx-border-radius: 20;" />
+                              <Label text="Phone Number" textFill="#2d3539">
                                  <font>
                                     <Font size="14.0" />
                                  </font>
                               </Label>
-                              <TextField fx:id="admtxtphonenum" promptText="Nomor HP" style="-fx-background-color: transparent; -fx-border-color: #243292; -fx-border-radius: 20;" />
-                              <Label text="Admin ID">
+                              <TextField fx:id="admtxtphonenum" promptText="Nomor HP" style="-fx-background-color: transparent; -fx-border-color: #008081; -fx-border-radius: 20;" />
+                              <Label text="Admin ID" textFill="#2d3539">
                                  <font>
                                     <Font size="14.0" />
                                  </font>
                               </Label>
-                              <TextField fx:id="admtxtid" promptText="ID" style="-fx-background-color: transparent; -fx-border-color: #243292; -fx-border-radius: 20;" />
-                              <Label text="Password">
+                              <TextField fx:id="admtxtid" promptText="ID" style="-fx-background-color: transparent; -fx-border-color: #008081; -fx-border-radius: 20;" />
+                              <Label text="Password" textFill="#2d3539">
                                  <font>
                                     <Font size="14.0" />
                                  </font>
                               </Label>
-                              <PasswordField fx:id="admtxtpass" promptText="Password" style="-fx-background-color: transparent; -fx-border-color: #243292; -fx-border-radius: 20;" />
-                              <Label text="New Password">
+                              <PasswordField fx:id="admtxtpass" promptText="Password" style="-fx-background-color: transparent; -fx-border-color: #008081; -fx-border-radius: 20;" />
+                              <Label text="New Password" textFill="#2d3539">
                                  <font>
                                     <Font size="14.0" />
                                  </font>
                               </Label>
-                              <PasswordField fx:id="admtxtnewpass" promptText="Password Baru" style="-fx-background-color: transparent; -fx-border-color: #243292; -fx-border-radius: 20;" />
+                              <PasswordField fx:id="admtxtnewpass" promptText="Password Baru" style="-fx-background-color: transparent; -fx-border-color: #008081; -fx-border-radius: 20;" />
                               <Label />
                               <HBox prefHeight="39.0" prefWidth="674.0" spacing="40.0">
                                  <children>
-                                    <Button fx:id="admupdatebtn" mnemonicParsing="false" onAction="#admupdate" prefHeight="37.0" prefWidth="155.0" style="-fx-background-color: #243292; -fx-background-radius: 20;" text="Update" textFill="WHITE" />
-                                    <Button fx:id="admcancelbtn" mnemonicParsing="false" onAction="#admcancel" prefHeight="40.0" prefWidth="155.0" style="-fx-border-color: #000; -fx-border-radius: 20; -fx-background-color: transparent;" text="Cancel" />
+                                    <Button fx:id="admupdatebtn" mnemonicParsing="false" onAction="#admupdate" prefHeight="37.0" prefWidth="155.0" style="-fx-background-color: #008081; -fx-background-radius: 20;" text="Update" textFill="WHITE" />
+                                    <Button fx:id="admcancelbtn" mnemonicParsing="false" onAction="#admcancel" prefHeight="40.0" prefWidth="155.0" style="-fx-border-color: #008081; -fx-border-radius: 20; -fx-background-color: transparent;" text="Cancel" />
                                  </children>
                               </HBox>
                            </children>
@@ -183,7 +209,7 @@
       </BorderPane>
    </center>
    <bottom>
-      <HBox alignment="CENTER" prefHeight="20.0" prefWidth="1142.0" style="-fx-background-color: #243292;" BorderPane.alignment="CENTER">
+      <HBox alignment="CENTER" prefHeight="20.0" prefWidth="1142.0" style="-fx-background-color: #008081;" BorderPane.alignment="CENTER">
          <children>
             <Label graphicTextGap="5.0" lineSpacing="2.0" opacity="0.65" prefHeight="7.0" prefWidth="457.0" text="Copyright © 2023 Bella Arsita Ginting, Ichsan Ilyasa, and Ferren Andrea. All Rights Reserved." textAlignment="CENTER" textFill="WHITE">
                <font>
