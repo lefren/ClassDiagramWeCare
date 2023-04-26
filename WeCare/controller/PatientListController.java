@@ -24,6 +24,10 @@ public class PatientListController implements Initializable {
     @FXML
     private Label labeltotaluser;
     @FXML
+    private Label labeltotalhospital;
+    @FXML
+    private Label labeltotaldoctor;
+    @FXML
     private TableColumn<User, String> listageuser;
 
     @FXML

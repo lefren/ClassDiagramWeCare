@@ -4,14 +4,12 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Hyperlink?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.TableColumn?>
-<?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane prefHeight="700.0" prefWidth="1145.0" style="-fx-border-color: #fff;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="OOP.JFRAME.controller.PatientListController">
+<BorderPane prefHeight="700.0" prefWidth="1145.0" style="-fx-border-color: #fff;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="OOP.JFRAME.controller.PatientController">
     <left>
         <VBox alignment="TOP_CENTER" prefHeight="637.0" prefWidth="171.0" spacing="15.0" style="-fx-background-color: #008081;" BorderPane.alignment="CENTER">
             <children>
@@ -30,17 +28,17 @@
                                 <Font size="14.0" />
                             </font>
                         </Label>
-                        <Button alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="30.0" prefWidth="178.0" style="-fx-background-color: transparent;" text="Overview" textFill="#fdfefc">
+                        <Button fx:id="overviewbutton" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#overviewbtn" prefHeight="30.0" prefWidth="178.0" style="-fx-background-color: transparent;" text="Overview" textFill="#fdfefc">
                             <font>
                                 <Font size="14.0" />
                             </font>
                         </Button>
-                        <Button alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="25.0" prefWidth="223.0" style="-fx-background-color: transparent;" text="Patient" textFill="#fdfefc">
+                        <Button fx:id="patientbutton" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#patientbtn" prefHeight="25.0" prefWidth="223.0" style="-fx-background-color: transparent;" text="Patient" textFill="#fdfefc">
                             <font>
                                 <Font size="14.0" />
                             </font>
                         </Button>
-                        <Button alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="25.0" prefWidth="223.0" style="-fx-background-color: transparent;" text="Appointment" textFill="#fdfefc">
+                        <Button fx:id="appointmentbutton" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#appointmentbtn" prefHeight="25.0" prefWidth="223.0" style="-fx-background-color: transparent;" text="Appointment" textFill="#fdfefc">
                             <font>
                                 <Font size="14.0" />
                             </font>
@@ -53,12 +51,12 @@
                                 <Font size="14.0" />
                             </font>
                         </Label>
-                        <Button alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="25.0" prefWidth="177.0" style="-fx-background-color: transparent;" text="Doctor" textFill="#fdfefc">
+                        <Button fx:id="doctorbutton" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#doctorbtn" prefHeight="25.0" prefWidth="177.0" style="-fx-background-color: transparent;" text="Doctor" textFill="#fdfefc">
                             <font>
                                 <Font size="14.0" />
                             </font>
                         </Button>
-                        <Button alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="25.0" prefWidth="329.0" style="-fx-background-color: transparent;" text="Hospital" textFill="#fdfefc">
+                        <Button fx:id="hospitalbutton" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#hospitalbtn" prefHeight="25.0" prefWidth="329.0" style="-fx-background-color: transparent;" text="Hospital" textFill="#fdfefc">
                             <font>
                                 <Font size="14.0" />
                             </font>
@@ -73,7 +71,7 @@
                         <Font size="14.0" />
                     </font>
                 </Button>
-                <Button fx:id="settingsbutton" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#settingsbtn" prefHeight="25.0" prefWidth="177.0" style="-fx-background-color: transparent;" text="Settings" textFill="#fdfefc">
+                <Button alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="25.0" prefWidth="177.0" style="-fx-background-color: transparent;" text="Settings" textFill="#fdfefc">
                     <font>
                         <Font size="14.0" />
                     </font>
@@ -130,7 +128,7 @@
                                     <children>
                                         <VBox prefHeight="43.0" prefWidth="553.0">
                                             <children>
-                                                <Label style="-fx-font-weight: bold;" text="Users List">
+                                                <Label style="-fx-font-weight: bold;" text="Patient CMS">
                                                     <font>
                                                         <Font size="17.0" />
                                                     </font>
@@ -154,76 +152,6 @@
                                     </padding>
                                 </HBox>
                             </top>
-                     <bottom>
-                        <TableView fx:id="userstable" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
-                          <columns>
-                            <TableColumn fx:id="listnameuser" prefWidth="160.79996490478516" text="Name" />
-                              <TableColumn fx:id="listageuser" minWidth="0.79998779296875" prefWidth="215.73330688476562" text="Age" />
-                              <TableColumn fx:id="listphonenumuser" prefWidth="206.66665649414062" text="Phone Number" />
-                              <TableColumn fx:id="listnikuser" prefWidth="286.4000122070313" text="NIK" />
-                          </columns>
-                        </TableView>
-                     </bottom>
-                     <center>
-                        <HBox alignment="CENTER" prefHeight="208.0" prefWidth="694.0" spacing="25.0" style="-fx-background-color: transparent; -fx-background-radius: 10;" BorderPane.alignment="CENTER">
-                           <BorderPane.margin>
-                              <Insets bottom="30.0" />
-                           </BorderPane.margin>
-                           <children>
-                              <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #fff; -fx-background-radius: 10;">
-                                 <children>
-                                    <VBox alignment="CENTER" prefHeight="208.0" prefWidth="281.0" spacing="20.0">
-                                       <children>
-                                          <Label text="Total Patient in 2023">
-                                             <font>
-                                                <Font size="14.0" />
-                                             </font>
-                                          </Label>
-                                          <Label fx:id="labeltotaluser" alignment="CENTER" text="Label">
-                                             <font>
-                                                <Font size="36.0" />
-                                             </font>
-                                          </Label>
-                                       </children>
-                                    </VBox>
-                                 </children></HBox>
-                              <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #fff; -fx-background-radius: 10;">
-                                 <children>
-                                    <VBox alignment="CENTER" prefHeight="208.0" prefWidth="281.0" spacing="20.0">
-                                       <children>
-                                          <Label text="Total Doctor in 2023">
-                                             <font>
-                                                <Font size="14.0" />
-                                             </font>
-                                          </Label>
-                                          <Label fx:id="labeltotaldoctor" alignment="CENTER" text="Label">
-                                             <font>
-                                                <Font size="36.0" />
-                                             </font>
-                                          </Label>
-                                       </children>
-                                    </VBox>
-                                 </children></HBox>
-                              <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #fff; -fx-background-radius: 10;">
-                                 <children>
-                                    <VBox alignment="CENTER" prefHeight="208.0" prefWidth="281.0" spacing="20.0">
-                                       <children>
-                                          <Label text="Total Hospital in 2023">
-                                             <font>
-                                                <Font size="14.0" />
-                                             </font>
-                                          </Label>
-                                          <Label fx:id="labeltotalhospital" alignment="CENTER" text="Label">
-                                             <font>
-                                                <Font size="36.0" />
-                                             </font>
-                                          </Label>
-                                       </children>
-                                    </VBox>
-                                 </children></HBox>
-                           </children>
-                        </HBox>
-                     </center>
                         </BorderPane>
                     </center>
                 </BorderPane>
