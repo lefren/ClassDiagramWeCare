@@ -20,6 +20,7 @@ public class DashboardAdmin extends Application {
         stage.setTitle("We care application");
         stage.setScene(scene);
         stage.show();
+        stage.centerOnScreen();
     }
 
     public static void main(String[] args) {

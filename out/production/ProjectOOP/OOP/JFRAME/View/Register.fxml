@@ -36,7 +36,10 @@
             <PasswordField fx:id="regtxtpass" promptText="Password" style="-fx-background-color: transparent; -fx-border-color: #000; -fx-border-radius: 40;" />
             <Label text="Confirm Password" />
             <PasswordField fx:id="regtxtconfpass" promptText="Konfirmasi Password" style="-fx-background-color: transparent; -fx-border-color: #000; -fx-border-radius: 40;" />
-            <CheckBox mnemonicParsing="false" text="Do you agree to the Terms and Condition?" />
+            <CheckBox mnemonicParsing="false" text="Do you agree to the Terms and Condition?">
+               <font>
+                  <Font size="10.0" />
+               </font></CheckBox>
             <HBox prefHeight="1.0" prefWidth="369.0" spacing="30.0">
                <children>
                   <Button fx:id="regsignupbtn" mnemonicParsing="false" onAction="#regsignup" prefHeight="35.0" prefWidth="170.0" style="-fx-background-color: D06AB7; -fx-background-radius: 40;" text="Sign Up" textFill="WHITE" />

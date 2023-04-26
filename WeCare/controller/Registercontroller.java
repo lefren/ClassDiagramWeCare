@@ -59,6 +59,7 @@ public class Registercontroller {
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         stage.setScene(scene);
         stage.show();
+        stage.centerOnScreen();
     }
     @FXML
     void regsignup(ActionEvent event) throws IOException {
@@ -83,6 +84,7 @@ public class Registercontroller {
             Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
             stage.setScene(scene);
             stage.show();
+            stage.centerOnScreen();
         }else{
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.initOwner(stage);
