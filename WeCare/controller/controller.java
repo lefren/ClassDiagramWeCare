@@ -17,7 +17,6 @@ import java.util.Objects;
 
 public class controller {
 
-
     @FXML
     private Button admcancelbtn;
 
@@ -43,6 +42,21 @@ public class controller {
     private Button admupdatebtn;
 
     @FXML
+    private Button appointmentbutton;
+
+    @FXML
+    private Button doctorbutton;
+
+    @FXML
+    private Button hospitalbutton;
+
+    @FXML
+    private Button overviewbutton;
+
+    @FXML
+    private Button patientbutton;
+
+    @FXML
     void admcancel(ActionEvent event) {
 
     }
@@ -64,6 +78,37 @@ public class controller {
 
     @FXML
     void admupdate(ActionEvent event) {
+
+    }
+
+    @FXML
+    void appointmentbtn(ActionEvent event) {
+
+    }
+
+    @FXML
+    void doctorbtn(ActionEvent event) {
+
+    }
+
+    @FXML
+    void hospitalbtn(ActionEvent event) {
+
+    }
+
+    @FXML
+    void overviewbtn(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("../view/dashboardadminoverview.fxml")));
+        Scene scene = new Scene(root);
+
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage.setScene(scene);
+        stage.show();
+        stage.centerOnScreen();
+    }
+
+    @FXML
+    void patientbtn(ActionEvent event) {
 
     }
 }

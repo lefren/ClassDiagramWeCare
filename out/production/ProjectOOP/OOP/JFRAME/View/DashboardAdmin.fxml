@@ -15,44 +15,50 @@
    <left>
       <VBox alignment="TOP_CENTER" prefHeight="637.0" prefWidth="171.0" spacing="15.0" style="-fx-background-color: #008081;" BorderPane.alignment="CENTER">
          <children>
-            <Label text="LOGO" textFill="WHITE">
+            <Label text="WeCare" textFill="WHITE">
                <font>
                   <Font size="40.0" />
                </font>
             </Label>
             <VBox prefHeight="488.0" prefWidth="151.0" spacing="10.0">
                <children>
-                  <Label prefHeight="17.0" prefWidth="192.0" text="Main Menu">
+                  <Label prefHeight="17.0" prefWidth="192.0" text="Main Menu" textFill="#2e2e2e">
                      <padding>
                         <Insets left="8.0" />
                      </padding>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
                   </Label>
-                  <Button alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="30.0" prefWidth="178.0" style="-fx-background-color: transparent;" text="Overview" textFill="#fdfefc">
+                  <Button fx:id="overviewbutton" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#overviewbtn" prefHeight="30.0" prefWidth="178.0" style="-fx-background-color: transparent;" text="Overview" textFill="#fdfefc">
                      <font>
                         <Font size="14.0" />
                      </font>
                   </Button>
-                  <Button alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="25.0" prefWidth="223.0" style="-fx-background-color: transparent;" text="Patient" textFill="#fdfefc">
+                  <Button fx:id="patientbutton" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#patientbtn" prefHeight="25.0" prefWidth="223.0" style="-fx-background-color: transparent;" text="Patient" textFill="#fdfefc">
                      <font>
                         <Font size="14.0" />
                      </font>
                   </Button>
-                  <Button alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="25.0" prefWidth="223.0" style="-fx-background-color: transparent;" text="Appointment" textFill="#fdfefc">
+                  <Button fx:id="appointmentbutton" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#appointmentbtn" prefHeight="25.0" prefWidth="223.0" style="-fx-background-color: transparent;" text="Appointment" textFill="#fdfefc">
                      <font>
                         <Font size="14.0" />
                      </font>
                   </Button>
-                  <Label prefHeight="17.0" prefWidth="281.0" text="Other Menu">
+                  <Label prefHeight="17.0" prefWidth="281.0" text="Other Menu" textFill="#2e2e2e">
                      <padding>
                         <Insets left="8.0" />
                      </padding>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
                   </Label>
-                  <Button alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="25.0" prefWidth="177.0" style="-fx-background-color: transparent;" text="Doctor" textFill="#fdfefc">
+                  <Button fx:id="doctorbutton" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#doctorbtn" prefHeight="25.0" prefWidth="177.0" style="-fx-background-color: transparent;" text="Doctor" textFill="#fdfefc">
                      <font>
                         <Font size="14.0" />
                      </font>
                   </Button>
-                  <Button alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="25.0" prefWidth="329.0" style="-fx-background-color: transparent;" text="Hospital" textFill="#fdfefc">
+                  <Button fx:id="hospitalbutton" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#hospitalbtn" prefHeight="25.0" prefWidth="329.0" style="-fx-background-color: transparent;" text="Hospital" textFill="#fdfefc">
                      <font>
                         <Font size="14.0" />
                      </font>
@@ -62,7 +68,6 @@
                   <Insets left="5.0" right="5.0" />
                </padding>
             </VBox>
-            <VBox alignment="BOTTOM_CENTER" prefHeight="349.0" prefWidth="151.0" />
             <Button alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="25.0" prefWidth="177.0" style="-fx-background-color: transparent;" text="Help Desk" textFill="#fdfefc">
                <font>
                   <Font size="14.0" />
