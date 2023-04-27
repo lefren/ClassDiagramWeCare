@@ -158,9 +158,9 @@
                         <TableView fx:id="userstable" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
                           <columns>
                             <TableColumn fx:id="listnameuser" prefWidth="160.79996490478516" text="Name" />
-                              <TableColumn fx:id="listageuser" minWidth="0.79998779296875" prefWidth="215.73330688476562" text="Age" />
-                              <TableColumn fx:id="listphonenumuser" prefWidth="206.66665649414062" text="Phone Number" />
-                              <TableColumn fx:id="listnikuser" prefWidth="286.4000122070313" text="NIK" />
+                              <TableColumn fx:id="listageuser" minWidth="0.79998779296875" prefWidth="103.99996948242188" text="Age" />
+                              <TableColumn fx:id="listphonenumuser" prefWidth="275.7333679199219" text="Phone Number" />
+                              <TableColumn fx:id="listnikuser" prefWidth="332.2666015625" text="NIK" />
                           </columns>
                         </TableView>
                      </bottom>

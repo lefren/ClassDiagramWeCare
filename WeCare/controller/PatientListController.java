@@ -45,6 +45,11 @@ public class PatientListController implements Initializable {
     @FXML
     private TableView<User> userstable;
 
+    User user = null;
+    final String DB_URL = "jdbc:mysql://localhost/projectoop?serverTimezone=UTC";
+    final String USERNAME = "root";
+    final String PASS = "";
+
     @FXML
     void admlogout(ActionEvent event) throws IOException {
         Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("../view/login.fxml")));
@@ -77,9 +82,6 @@ public class PatientListController implements Initializable {
         listnikuser.setCellValueFactory(new PropertyValueFactory<>("nik"));
 
         try {
-            final String DB_URL = "jdbc:mysql://localhost/projectoop?serverTimezone=UTC";
-            final String USERNAME = "root";
-            final String PASS = "";
 
             Connection connection = DriverManager.getConnection(DB_URL, USERNAME, PASS);
             String query = "SELECT COUNT(*) FROM users";
@@ -94,10 +96,6 @@ public class PatientListController implements Initializable {
     }
 
    public void loadDate(){
-       User user = null;
-       final String DB_URL = "jdbc:mysql://localhost/projectoop?serverTimezone=UTC";
-       final String USERNAME = "root";
-       final String PASS = "";
 
        try {
            Connection conn = DriverManager.getConnection(DB_URL, USERNAME, PASS);
