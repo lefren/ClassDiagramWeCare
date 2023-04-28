@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane prefHeight="700.0" prefWidth="1145.0" style="-fx-border-color: #fff;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="OOP.JFRAME.controller.PatientController">
+<BorderPane prefHeight="700.0" prefWidth="1145.0" style="-fx-border-color: #fff;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="OOP.JFRAME.controller.DoctorController">
     <left>
         <VBox alignment="TOP_CENTER" prefHeight="637.0" prefWidth="171.0" spacing="15.0" style="-fx-background-color: #008081;" BorderPane.alignment="CENTER">
             <children>
@@ -123,72 +123,70 @@
                     <center>
                         <BorderPane prefHeight="510.0" prefWidth="871.0" BorderPane.alignment="CENTER">
                             <BorderPane.margin>
-                                <Insets bottom="50.0" left="50.0" right="50.0" />
+                                <Insets bottom="30.0" left="50.0" right="50.0" />
                             </BorderPane.margin>
-                            <bottom>
-                                <TableView fx:id="tableviewid" prefHeight="276.0" prefWidth="654.0" BorderPane.alignment="CENTER">
-                                    <columns>
-                                        <TableColumn fx:id="nameid" prefWidth="214.93330991268158" text="Name" />
-                                        <TableColumn fx:id="ageid" prefWidth="105.60000610351562" text="Age" />
-                                        <TableColumn fx:id="phonenumid" prefWidth="174.4000244140625" text="Phone Number" />
-                                        <TableColumn fx:id="nikid" prefWidth="247.19998168945312" text="NIK" />
-                                        <TableColumn fx:id="controld" prefWidth="129.59991455078125" text="Control" />
-                                    </columns>
-                                </TableView>
-                            </bottom>
-                            <left>
-                                <VBox prefHeight="238.0" prefWidth="193.0" BorderPane.alignment="CENTER" />
-                            </left>
-                            <right>
-                                <VBox alignment="CENTER" prefHeight="183.0" prefWidth="203.0" spacing="20.0" style="-fx-background-color: #fff; -fx-background-radius: 10;" BorderPane.alignment="CENTER">
-                                    <BorderPane.margin>
-                                        <Insets bottom="30.0" top="30.0" />
-                                    </BorderPane.margin>
-                                    <children>
-                                        <Label text="Total Patient in 2023">
-                                            <font>
-                                                <Font size="14.0" />
-                                            </font>
-                                        </Label>
-                                        <Label fx:id="labeltotalpatientid" text="Label">
-                                            <font>
-                                                <Font size="36.0" />
-                                            </font>
-                                        </Label>
-                                    </children>
-                                </VBox>
-                            </right>
+                     <center>
+                        <TableView fx:id="tableviewid" prefHeight="539.0" prefWidth="638.0" BorderPane.alignment="CENTER">
+                          <columns>
+                            <TableColumn fx:id="doctornameid" prefWidth="184.79999542236328" text="Doctor Name" />
+                              <TableColumn fx:id="strnumid" prefWidth="180.53338623046875" text="STR Number" />
+                              <TableColumn fx:id="hospitalid" prefWidth="181.86654663085938" text="Hospital" />
+                              <TableColumn fx:id="experienceid" prefWidth="199.9998779296875" text="Experience" />
+                              <TableColumn fx:id="controlid" prefWidth="135.20001220703125" text="Control" />
+                              <TableColumn fx:id="controlid1" prefWidth="135.20001220703125" text="Control" />
+                          </columns>
+                        </TableView>
+                     </center>
+                     <top>
+                        <VBox alignment="CENTER" prefHeight="128.0" prefWidth="871.0" spacing="20.0" style="-fx-background-color: #fff; -fx-background-radius: 10;" BorderPane.alignment="CENTER">
+                           <children>
+                              <Label text="Total Doctor in 2023">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="labeltotaldoctorid" text="Label">
+                                 <font>
+                                    <Font size="36.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <BorderPane.margin>
+                              <Insets bottom="30.0" />
+                           </BorderPane.margin>
+                        </VBox>
+                     </top>
                         </BorderPane>
                     </center>
-                    <top>
-                        <HBox prefHeight="0.0" prefWidth="952.0" style="-fx-background-color: #f3f3f3;" BorderPane.alignment="CENTER">
-                            <children>
-                                <VBox prefHeight="42.0" prefWidth="582.0">
-                                    <children>
-                                        <Label style="-fx-font-weight: bold;" text="Patient CMS">
-                                            <font>
-                                                <Font size="17.0" />
-                                            </font>
-                                        </Label>
-                                        <Label opacity="0.65" text="&quot;The future belongs to those who believe in the beauty of their dreams.&quot;">
-                                            <font>
-                                                <Font size="10.0" />
-                                            </font>
-                                        </Label>
-                                    </children>
-                                    <HBox.margin>
-                                        <Insets left="30.0" right="30.0" />
-                                    </HBox.margin>
-                                </VBox>
-                            </children>
-                            <BorderPane.margin>
-                                <Insets left="20.0" />
-                            </BorderPane.margin>
-                            <padding>
-                                <Insets bottom="5.0" top="5.0" />
-                            </padding>
-                        </HBox>
-                    </top>
+               <top>
+                          <HBox prefHeight="0.0" prefWidth="952.0" style="-fx-background-color: #f3f3f3;" BorderPane.alignment="CENTER">
+                              <children>
+                                  <VBox prefHeight="42.0" prefWidth="582.0">
+                                      <children>
+                                          <Label style="-fx-font-weight: bold;" text="Doctor CMS">
+                                              <font>
+                                                  <Font size="17.0" />
+                                              </font>
+                                          </Label>
+                                          <Label opacity="0.65" text="&quot;The future belongs to those who believe in the beauty of their dreams.&quot;">
+                                              <font>
+                                                  <Font size="10.0" />
+                                              </font>
+                                          </Label>
+                                      </children>
+                                      <HBox.margin>
+                                          <Insets left="30.0" right="30.0" />
+                                      </HBox.margin>
+                                  </VBox>
+                              </children>
+                              <BorderPane.margin>
+                                  <Insets left="20.0" />
+                              </BorderPane.margin>
+                              <padding>
+                                  <Insets bottom="5.0" top="5.0" />
+                              </padding>
+                          </HBox>
+               </top>
                 </BorderPane>
             </center>
         </BorderPane>

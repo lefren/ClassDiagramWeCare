@@ -87,8 +87,14 @@ public class controller {
     }
 
     @FXML
-    void doctorbtn(ActionEvent event) {
+    void doctorbtn(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("../view/dashboardadmindoctor.fxml")));
+        Scene scene = new Scene(root);
 
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage.setScene(scene);
+        stage.show();
+        stage.centerOnScreen();
     }
 
     @FXML
@@ -108,7 +114,13 @@ public class controller {
     }
 
     @FXML
-    void patientbtn(ActionEvent event) {
+    void patientbtn(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("../view/dashboardadminpatient.fxml")));
+        Scene scene = new Scene(root);
 
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage.setScene(scene);
+        stage.show();
+        stage.centerOnScreen();
     }
 }

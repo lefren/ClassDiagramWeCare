@@ -95,7 +95,7 @@ public class PatientListController implements Initializable {
         }
     }
 
-   public void loadDate(){
+   private void loadDate(){
 
        try {
            Connection conn = DriverManager.getConnection(DB_URL, USERNAME, PASS);
