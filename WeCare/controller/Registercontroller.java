@@ -95,7 +95,7 @@ public class Registercontroller {
             alert.showAndWait();
         }
     }
-    public void Registeruser() throws IOException {
+    public void Registeruser() {
         String name = regtxtname.getText();
         String age = regtxtage.getText();
         String phone = regtxtphonenum.getText();

@@ -159,7 +159,7 @@
                         </BorderPane>
                     </center>
                <top>
-                          <HBox prefHeight="0.0" prefWidth="952.0" style="-fx-background-color: #f3f3f3;" BorderPane.alignment="CENTER">
+                          <HBox prefHeight="51.0" prefWidth="886.0" style="-fx-background-color: #f3f3f3;" BorderPane.alignment="CENTER">
                               <children>
                                   <VBox prefHeight="42.0" prefWidth="582.0">
                                       <children>
@@ -178,6 +178,11 @@
                                           <Insets left="30.0" right="30.0" />
                                       </HBox.margin>
                                   </VBox>
+                        <HBox alignment="CENTER_RIGHT" prefHeight="42.0" prefWidth="260.0">
+                           <children>
+                              <Button fx:id="addnewdoctor" mnemonicParsing="false" onAction="#addnewdoctorbtn" prefHeight="26.0" prefWidth="177.0" style="-fx-background-color: #008081; -fx-background-radius: 20;" text="Add New Doctor" textFill="WHITE" />
+                           </children>
+                        </HBox>
                               </children>
                               <BorderPane.margin>
                                   <Insets left="20.0" />

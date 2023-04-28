@@ -5,15 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1aaec7a7-6e4d-4478-8b85-d2996436fbe4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/WeCare/Doctor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WeCare/controller/CRUDDoctorController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WeCare/View/AdminRegisterDoctor.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/WeCare/View/AdminRegisterDoctor.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WeCare/View/DashboardAdminDoctor.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/WeCare/View/DashboardAdminDoctor.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeCare/controller/CRUDDoctorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/WeCare/controller/CRUDDoctorController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WeCare/controller/DoctorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/WeCare/controller/DoctorController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/View/AdminRegisterDoctor.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/View/AdminRegisterDoctor.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeCare/controller/Registercontroller.java" beforeDir="false" afterPath="$PROJECT_DIR$/WeCare/controller/Registercontroller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/View/DashboardAdminDoctor.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/View/DashboardAdminDoctor.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/controller/CRUDDoctorController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/controller/CRUDDoctorController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/controller/DoctorController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/controller/DoctorController$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/controller/DoctorController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/controller/DoctorController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/controller/Registercontroller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/controller/Registercontroller.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

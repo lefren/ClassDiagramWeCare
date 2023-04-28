@@ -12,6 +12,7 @@ import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.HBox;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 
 import java.io.IOException;
 import java.net.URL;
@@ -21,6 +22,8 @@ import java.util.ResourceBundle;
 
 public class DoctorController implements Initializable {
 
+    @FXML
+    private Button addnewdoctor;
     @FXML
     private Hyperlink admlogoutbtn;
 
@@ -115,6 +118,18 @@ public class DoctorController implements Initializable {
     }
 
     @FXML
+    void addnewdoctorbtn(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("../view/adminregisterdoctor.fxml")));
+        Scene scene = new Scene(root);
+        Stage stage = new Stage();
+
+        stage.setScene(scene);
+        stage.initStyle(StageStyle.UTILITY);
+        stage.show();
+        stage.centerOnScreen();
+    }
+
+    @FXML
     void settingsbtn(ActionEvent event) throws IOException {
 
         Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("../view/dashboardadmin.fxml")));
@@ -138,7 +153,7 @@ public class DoctorController implements Initializable {
         controlid.setCellFactory(param -> new TableCell<>() {
 
             private final Button deleteButton = new Button("DELETE");
-            private final Button editButton = new Button("ADD");
+            private final Button editButton = new Button("EDIT");
 
             {
                 deleteButton.setOnAction(event -> {
@@ -219,5 +234,6 @@ public class DoctorController implements Initializable {
     }
 
     private void adddoctor(Doctor doctor) {
+
     }
 }
