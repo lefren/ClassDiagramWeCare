@@ -5,18 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1aaec7a7-6e4d-4478-8b85-d2996436fbe4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/WeCare/View/AdminRegisterDoctor.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WeCare/View/DashboardAdminDoctor.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WeCare/controller/DoctorController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WeCare/Doctor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WeCare/controller/CRUDDoctorController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WeCare/View/DashboardAdminPatient.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/WeCare/View/DashboardAdminPatient.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WeCare/controller/PatientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/WeCare/controller/PatientController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WeCare/controller/PatientListController.java" beforeDir="false" afterPath="$PROJECT_DIR$/WeCare/controller/PatientListController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WeCare/controller/controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/WeCare/controller/controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/View/DashboardAdminPatient.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/View/DashboardAdminPatient.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/controller/PatientController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/controller/PatientController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/controller/PatientListController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/controller/PatientListController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/controller/controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/controller/controller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeCare/View/AdminRegisterDoctor.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/WeCare/View/AdminRegisterDoctor.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeCare/View/DashboardAdminDoctor.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/WeCare/View/DashboardAdminDoctor.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeCare/controller/DoctorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/WeCare/controller/DoctorController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/View/AdminRegisterDoctor.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/View/AdminRegisterDoctor.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/View/DashboardAdminDoctor.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/View/DashboardAdminDoctor.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/controller/DoctorController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/controller/DoctorController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,8 +46,8 @@
         <option value="module-info" />
         <option value="HTML File" />
         <option value="JavaFXApplication" />
-        <option value="Class" />
         <option value="FxmlFile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
