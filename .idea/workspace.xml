@@ -5,20 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1aaec7a7-6e4d-4478-8b85-d2996436fbe4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/WeCare/View/DashboardAdminAppointment.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WeCare/View/DashboardAdminHospital.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WeCare/controller/AppointmentListController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WeCare/controller/HospitalController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WeCare/Hospital.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WeCare/View/AdminRegisterHospital.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WeCare/controller/CRUDHospitalController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WeCare/View/DashboardAdminOverview.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/WeCare/View/DashboardAdminOverview.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeCare/Doctor.java" beforeDir="false" afterPath="$PROJECT_DIR$/WeCare/Doctor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeCare/View/DashboardAdmin.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/WeCare/View/DashboardAdmin.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeCare/View/DashboardAdminHospital.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/WeCare/View/DashboardAdminHospital.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeCare/controller/CRUDDoctorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/WeCare/controller/CRUDDoctorController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WeCare/controller/DoctorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/WeCare/controller/DoctorController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WeCare/controller/PatientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/WeCare/controller/PatientController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WeCare/controller/PatientListController.java" beforeDir="false" afterPath="$PROJECT_DIR$/WeCare/controller/ListController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WeCare/controller/controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/WeCare/controller/controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeCare/controller/HospitalController.java" beforeDir="false" afterPath="$PROJECT_DIR$/WeCare/controller/HospitalController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/Doctor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/Doctor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/View/DashboardAdmin.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/View/DashboardAdmin.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/View/DashboardAdminHospital.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/View/DashboardAdminHospital.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/View/DashboardAdminOverview.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/View/DashboardAdminOverview.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/controller/AppointmentListController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/controller/AppointmentListController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/controller/CRUDDoctorController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/controller/CRUDDoctorController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/controller/PatientListController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/controller/controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/controller/controller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/controller/DoctorController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/controller/DoctorController$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/controller/DoctorController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/controller/DoctorController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/controller/HospitalController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/controller/HospitalController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/controller/ListController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/controller/ListController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/controller/PatientController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/controller/PatientController$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/controller/PatientController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/controller/PatientController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -144,11 +144,7 @@ public class CRUDDoctorController {
 
             int addedrows = insertstmt.executeUpdate();
             if(addedrows > 0){
-                doctor = new Doctor(resultSet.getString("doctor_name"),
-                        resultSet.getString("nomor_str"),
-                        resultSet.getString("phone_num"),
-                        resultSet.getString("hospital_place"),
-                        resultSet.getString("pengalaman_kerja"));
+                doctor = new Doctor(doctorname,nomorstr,phonenum,hospitalplace,pengalamankerja);
             }
             resultSet.close();
             preparedStatement.close();

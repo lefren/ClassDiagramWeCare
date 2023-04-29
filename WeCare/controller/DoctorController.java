@@ -105,7 +105,7 @@ public class DoctorController implements Initializable {
 
                 editButton.setOnAction(event -> {
                     Doctor doctor = getTableView().getItems().get(getIndex());
-                    adddoctor(doctor);
+                    updatedoctor(doctor);
                 });
             }
 
@@ -175,7 +175,7 @@ public class DoctorController implements Initializable {
         }
     }
 
-    private void adddoctor(Doctor doctor) {
+    private void updatedoctor(Doctor doctor) {
 
     }
 

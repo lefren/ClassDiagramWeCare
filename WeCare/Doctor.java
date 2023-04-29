@@ -7,7 +7,6 @@ public class Doctor {
     private String hospitalPlace;
     private String pengalamanKerja;
 
-
     public Doctor(String doctorName, String nomorStr, String phoneNum, String hospitalPlace, String pengalamanKerja) {
         this.doctorName = doctorName;
         this.nomorStr = nomorStr;

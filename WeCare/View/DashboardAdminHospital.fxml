@@ -178,7 +178,7 @@
                                 </VBox>
                                 <HBox alignment="CENTER_RIGHT" prefHeight="42.0" prefWidth="260.0">
                                     <children>
-                                        <Button fx:id="addnewdoctor" mnemonicParsing="false" onAction="#addnewdoctorbtn" prefHeight="26.0" prefWidth="177.0" style="-fx-background-color: #008081; -fx-background-radius: 20;" text="Add New Hospital" textFill="WHITE" />
+                                        <Button fx:id="addnewhospital" mnemonicParsing="false" onAction="#addnewhospitalbtn" prefHeight="26.0" prefWidth="177.0" style="-fx-background-color: #008081; -fx-background-radius: 20;" text="Add New Hospital" textFill="WHITE" />
                                     </children>
                                 </HBox>
                             </children>
