@@ -63,59 +63,11 @@ public class DoctorController implements Initializable {
     @FXML
     private Button settingsbtn;
 
-
-    @FXML
-    void admlogout(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("../view/login.fxml")));
-        Scene scene = new Scene(root);
-
-        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        stage.setScene(scene);
-        stage.show();
-        stage.centerOnScreen();
-    }
-
-    @FXML
-    void appointmentbtn(ActionEvent event) {
-
-    }
-
-    @FXML
-    void doctorbtn(ActionEvent event) {
-
-    }
-
-    @FXML
-    void hospitalbtn(ActionEvent event) {
-
-    }
     Doctor doctor = null;
     final String DB_URL = "jdbc:mysql://localhost/projectoop?serverTimezone=UTC";
     final String USERNAME = "root";
     final String PASS = "";
 
-    @FXML
-    void overviewbtn(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("../view/dashboardadminoverview.fxml")));
-        Scene scene = new Scene(root);
-
-        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        stage.setScene(scene);
-        stage.show();
-        stage.centerOnScreen();
-    }
-
-    @FXML
-    void patientbtn(ActionEvent event) throws IOException {
-
-        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("../view/dashboardadminpatient.fxml")));
-        Scene scene = new Scene(root);
-
-        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        stage.setScene(scene);
-        stage.show();
-        stage.centerOnScreen();
-    }
 
     @FXML
     void addnewdoctorbtn(ActionEvent event) throws IOException {
@@ -129,17 +81,7 @@ public class DoctorController implements Initializable {
         stage.centerOnScreen();
     }
 
-    @FXML
-    void settingsbtn(ActionEvent event) throws IOException {
 
-        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("../view/dashboardadmin.fxml")));
-        Scene scene = new Scene(root);
-
-        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        stage.setScene(scene);
-        stage.show();
-        stage.centerOnScreen();
-    }
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle){
         loadDate();
@@ -236,4 +178,86 @@ public class DoctorController implements Initializable {
     private void adddoctor(Doctor doctor) {
 
     }
+
+    @FXML
+    void settingsbtn(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("../view/dashboardadmin.fxml")));
+        Scene scene = new Scene(root);
+
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage.setScene(scene);
+        stage.show();
+        stage.centerOnScreen();
+    }
+
+    @FXML
+    void admlogout(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("../view/Login.fxml")));
+        Scene scene = new Scene(root);
+
+        Registercontroller controller = new Registercontroller();
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("../view/Login.fxml"));
+        loader.setController(controller);
+
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage.setScene(scene);
+        stage.show();
+        stage.centerOnScreen();
+    }
+
+    @FXML
+    void appointmentbtn(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("../view/dashboardadminappointment.fxml")));
+        Scene scene = new Scene(root);
+
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage.setScene(scene);
+        stage.show();
+        stage.centerOnScreen();
+    }
+
+    @FXML
+    void doctorbtn(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("../view/dashboardadmindoctor.fxml")));
+        Scene scene = new Scene(root);
+
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage.setScene(scene);
+        stage.show();
+        stage.centerOnScreen();
+    }
+
+    @FXML
+    void hospitalbtn(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("../view/dashboardadminhospital.fxml")));
+        Scene scene = new Scene(root);
+
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage.setScene(scene);
+        stage.show();
+        stage.centerOnScreen();
+    }
+
+    @FXML
+    void overviewbtn(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("../view/dashboardadminoverview.fxml")));
+        Scene scene = new Scene(root);
+
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage.setScene(scene);
+        stage.show();
+        stage.centerOnScreen();
+    }
+
+    @FXML
+    void patientbtn(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("../view/dashboardadminpatient.fxml")));
+        Scene scene = new Scene(root);
+
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage.setScene(scene);
+        stage.show();
+        stage.centerOnScreen();
+    }
+
 }

@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane prefHeight="700.0" prefWidth="1145.0" style="-fx-border-color: #fff;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="OOP.JFRAME.controller.PatientListController">
+<BorderPane prefHeight="700.0" prefWidth="1145.0" style="-fx-border-color: #fff;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="OOP.JFRAME.controller.ListController">
     <left>
         <VBox alignment="TOP_CENTER" prefHeight="637.0" prefWidth="171.0" spacing="15.0" style="-fx-background-color: #008081;" BorderPane.alignment="CENTER">
             <children>
@@ -30,17 +30,17 @@
                                 <Font size="14.0" />
                             </font>
                         </Label>
-                        <Button alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="30.0" prefWidth="178.0" style="-fx-background-color: transparent;" text="Overview" textFill="#fdfefc">
+                        <Button alignment="TOP_LEFT" mnemonicParsing="false" onAction="#overviewbtn" prefHeight="30.0" prefWidth="178.0" style="-fx-background-color: transparent;" text="Overview" textFill="#fdfefc">
                             <font>
                                 <Font size="14.0" />
                             </font>
                         </Button>
-                        <Button alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="25.0" prefWidth="223.0" style="-fx-background-color: transparent;" text="Patient" textFill="#fdfefc">
+                        <Button alignment="TOP_LEFT" mnemonicParsing="false" onAction="#patientbtn" prefHeight="25.0" prefWidth="223.0" style="-fx-background-color: transparent;" text="Patient" textFill="#fdfefc">
                             <font>
                                 <Font size="14.0" />
                             </font>
                         </Button>
-                        <Button alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="25.0" prefWidth="223.0" style="-fx-background-color: transparent;" text="Appointment" textFill="#fdfefc">
+                        <Button alignment="TOP_LEFT" mnemonicParsing="false" onAction="#appointmentbtn" prefHeight="25.0" prefWidth="223.0" style="-fx-background-color: transparent;" text="Appointment" textFill="#fdfefc">
                             <font>
                                 <Font size="14.0" />
                             </font>
@@ -53,12 +53,12 @@
                                 <Font size="14.0" />
                             </font>
                         </Label>
-                        <Button alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="25.0" prefWidth="177.0" style="-fx-background-color: transparent;" text="Doctor" textFill="#fdfefc">
+                        <Button alignment="TOP_LEFT" mnemonicParsing="false" onAction="#doctorbtn" prefHeight="25.0" prefWidth="177.0" style="-fx-background-color: transparent;" text="Doctor" textFill="#fdfefc">
                             <font>
                                 <Font size="14.0" />
                             </font>
                         </Button>
-                        <Button alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="25.0" prefWidth="329.0" style="-fx-background-color: transparent;" text="Hospital" textFill="#fdfefc">
+                        <Button alignment="TOP_LEFT" mnemonicParsing="false" onAction="#hospitalbtn" prefHeight="25.0" prefWidth="329.0" style="-fx-background-color: transparent;" text="Hospital" textFill="#fdfefc">
                             <font>
                                 <Font size="14.0" />
                             </font>

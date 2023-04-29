@@ -8,38 +8,21 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Hyperlink;
-import javafx.scene.control.PasswordField;
-import javafx.scene.control.TextField;
+import javafx.scene.control.Label;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
 import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.util.Objects;
 
-public class controller {
+public class HospitalController {
 
     @FXML
-    private Button admcancelbtn;
+    private Button addnewdoctor;
 
     @FXML
     private Hyperlink admlogoutbtn;
-
-    @FXML
-    private TextField admtxtid;
-
-    @FXML
-    private TextField admtxtname;
-
-    @FXML
-    private PasswordField admtxtnewpass;
-
-    @FXML
-    private PasswordField admtxtpass;
-
-    @FXML
-    private TextField admtxtphonenum;
-
-    @FXML
-    private Button admupdatebtn;
 
     @FXML
     private Button appointmentbutton;
@@ -48,7 +31,22 @@ public class controller {
     private Button doctorbutton;
 
     @FXML
+    private TableColumn<?, ?> hospitaladdressid;
+
+    @FXML
     private Button hospitalbutton;
+
+    @FXML
+    private TableColumn<?, ?> hospitalcontrol;
+
+    @FXML
+    private TableColumn<?, ?> hospitalnameid;
+
+    @FXML
+    private TableColumn<?, ?> hospitalphoneid;
+
+    @FXML
+    private Label labeltotalhospitalid;
 
     @FXML
     private Button overviewbutton;
@@ -57,13 +55,25 @@ public class controller {
     private Button patientbutton;
 
     @FXML
-    void admcancel(ActionEvent event) {
+    private Button settingsbtn;
+
+    @FXML
+    private TableView<?> tableviewid;
+
+    @FXML
+    void addnewdoctorbtn(ActionEvent event) {
 
     }
 
     @FXML
-    void admupdate(ActionEvent event) {
+    void settingsbtn(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("../view/dashboardadmin.fxml")));
+        Scene scene = new Scene(root);
 
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage.setScene(scene);
+        stage.show();
+        stage.centerOnScreen();
     }
 
     @FXML
@@ -135,4 +145,6 @@ public class controller {
         stage.show();
         stage.centerOnScreen();
     }
+
+
 }
