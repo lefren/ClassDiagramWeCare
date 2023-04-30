@@ -28,17 +28,17 @@
                                 <Font size="14.0" />
                             </font>
                         </Label>
-                        <Button fx:id="overviewbutton" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#overviewbtn" prefHeight="30.0" prefWidth="178.0" style="-fx-background-color: transparent;" text="Overview" textFill="#fdfefc">
+                        <Button fx:id="overviewpatientbutton" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#overviewpatientbtn" prefHeight="30.0" prefWidth="178.0" style="-fx-background-color: transparent;" text="🏠 Home" textFill="#fdfefc">
                             <font>
                                 <Font size="14.0" />
                             </font>
                         </Button>
-                        <Button fx:id="appointmentbutton" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#appointmentbtn" prefHeight="25.0" prefWidth="223.0" style="-fx-background-color: transparent;" text="Appointment" textFill="#fdfefc">
+                        <Button fx:id="appointmentpatientbutton" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#appointmentappointmentbtn" prefHeight="25.0" prefWidth="223.0" style="-fx-background-color: transparent;" text="📕 Appointment" textFill="#fdfefc">
                             <font>
                                 <Font size="14.0" />
                             </font>
                         </Button>
-                        <Label prefHeight="17.0" prefWidth="281.0" text="Other Menu" textFill="#2e2e2e">
+                        <Label prefHeight="17.0" prefWidth="281.0" text="List" textFill="#2e2e2e">
                             <padding>
                                 <Insets left="8.0" />
                             </padding>
@@ -46,12 +46,12 @@
                                 <Font size="14.0" />
                             </font>
                         </Label>
-                        <Button fx:id="doctorbutton" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#doctorbtn" prefHeight="25.0" prefWidth="177.0" style="-fx-background-color: transparent;" text="Doctor List" textFill="#fdfefc">
+                        <Button fx:id="doctorlistbutton" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#doctorlistbtn" prefHeight="25.0" prefWidth="177.0" style="-fx-background-color: transparent;" text="👨‍⚕️ Doctor List" textFill="#fdfefc">
                             <font>
                                 <Font size="14.0" />
                             </font>
                         </Button>
-                        <Button fx:id="hospitalbutton" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#hospitalbtn" prefHeight="25.0" prefWidth="329.0" style="-fx-background-color: transparent;" text="Hospital List" textFill="#fdfefc">
+                        <Button fx:id="hospitallistbutton" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#hospitallistbtn" prefHeight="25.0" prefWidth="329.0" style="-fx-background-color: transparent;" text="🏥 Hospital List" textFill="#fdfefc">
                             <font>
                                 <Font size="14.0" />
                             </font>
@@ -85,14 +85,14 @@
             <top>
                 <HBox alignment="CENTER_LEFT" prefHeight="57.0" prefWidth="971.0" style="-fx-background-color: #ffffff;" BorderPane.alignment="CENTER">
                     <children>
-                        <Label prefHeight="22.0" prefWidth="462.0" text="Welcome to We Care Application">
+                        <Label prefHeight="22.0" prefWidth="462.0" text="Welcome to We Care Application!">
                             <font>
                                 <Font name="Arial" size="18.0" />
                             </font>
                         </Label>
                         <HBox alignment="CENTER_RIGHT" prefHeight="57.0" prefWidth="700.0">
                             <children>
-                                <Hyperlink fx:id="admlogoutbtn" onAction="#admlogout" text="Logout" textFill="#008081">
+                                <Hyperlink fx:id="patientlogoutbtn" onAction="#patientlogout" text="Logout" textFill="#008081">
                                     <font>
                                         <Font size="14.0" />
                                     </font>

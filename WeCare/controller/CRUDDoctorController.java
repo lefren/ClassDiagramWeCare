@@ -145,11 +145,21 @@ public class CRUDDoctorController {
             int addedrows = insertstmt.executeUpdate();
             if(addedrows > 0){
                 doctor = new Doctor(doctorname,nomorstr,phonenum,hospitalplace,pengalamankerja);
+
+            sql = "INSERT INTO users (name, age, phone, nik, password, roles) VALUES (?, ?, ?, ?, ?, ?)";
+            insertstmt = conn.prepareStatement(sql);
+            insertstmt.setString(1, doctorname);
+            insertstmt.setInt(2, Integer.parseInt("1"));
+            insertstmt.setString(3, "anonymous");
+            insertstmt.setString(4, nomorstr);
+            insertstmt.setString(5, password);
+            insertstmt.setString(6, "doctor");
+            insertstmt.executeUpdate();
+
             }
             resultSet.close();
             preparedStatement.close();
             insertstmt.close();
-            conn.close();
 
         }catch (SQLException | NumberFormatException e) {
             e.printStackTrace();

@@ -5,47 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1aaec7a7-6e4d-4478-8b85-d2996436fbe4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/WeCare/controller/AdminPatientController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WeCare/View/DashboardDoctor.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WeCare/controller/DoctorController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WeCare/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/WeCare/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WeCare/View/DashboardAdmin.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/WeCare/View/DashboardAdmin.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WeCare/View/DashboardAdminAppointment.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/WeCare/View/DashboardAdminAppointment.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WeCare/View/DashboardAdminDoctor.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/WeCare/View/DashboardAdminDoctor.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WeCare/View/DashboardAdminHospital.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/WeCare/View/DashboardAdminHospital.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WeCare/View/DashboardAdminOverview.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/WeCare/View/DashboardAdminOverview.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WeCare/View/DashboardAdminPatient.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/WeCare/View/DashboardAdminPatient.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WeCare/View/DashboardDoctor.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WeCare/View/DashboardHospital.fxml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/WeCare/View/DashboardPatient.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/WeCare/View/DashboardPatient.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WeCare/View/DashboardPatientHome.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WeCare/controller/AppointmentListController.java" beforeDir="false" afterPath="$PROJECT_DIR$/WeCare/controller/AdminAppointmentListController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WeCare/controller/DoctorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/WeCare/controller/AdminDoctorController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WeCare/controller/HospitalController.java" beforeDir="false" afterPath="$PROJECT_DIR$/WeCare/controller/AdminHospitalController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WeCare/controller/ListController.java" beforeDir="false" afterPath="$PROJECT_DIR$/WeCare/controller/AdminUserListController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeCare/controller/CRUDDoctorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/WeCare/controller/CRUDDoctorController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WeCare/controller/Logincontroller.java" beforeDir="false" afterPath="$PROJECT_DIR$/WeCare/controller/Logincontroller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WeCare/controller/PatientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/WeCare/controller/PatientController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WeCare/controller/controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/WeCare/controller/Admincontroller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/View/DashboardAdmin.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/View/DashboardAdmin.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/View/DashboardAdminAppointment.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/View/DashboardAdminAppointment.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/View/DashboardAdminDoctor.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/View/DashboardAdminDoctor.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/View/DashboardAdminHospital.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/View/DashboardAdminHospital.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/View/DashboardAdminOverview.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/View/DashboardAdminOverview.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/View/DashboardAdminPatient.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/View/DashboardAdminPatient.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/View/DashboardDoctor.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/View/DashboardHospital.fxml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/View/DashboardPatient.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/View/DashboardPatient.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/View/DashboardPatientHome.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/controller/AppointmentListController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/controller/DoctorController$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/controller/DoctorController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/controller/HospitalController$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/controller/HospitalController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/controller/ListController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/controller/CRUDDoctorController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/controller/CRUDDoctorController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/controller/Logincontroller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/controller/Logincontroller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/controller/PatientController$1.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/controller/PatientController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/controller/PatientController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/controller/controller.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

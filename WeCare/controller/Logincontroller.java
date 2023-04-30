@@ -50,7 +50,9 @@ public class Logincontroller {
             Parent root;
             if (role.equals("admin")) {
                 root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("../view/dashboardadminoverview.fxml")));
-            } else {
+            } else if(role.equals("doctor")) {
+                root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("../view/dashboarddoctor.fxml")));
+            }else{
                 root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("../view/dashboardpatient.fxml")));
             }
 
@@ -72,7 +74,6 @@ public class Logincontroller {
         }
     }
 
-//    public User user;
     private String getAuthenticatedUser(String nik, String pass){
 //        User user = null;
         String role = null;
@@ -92,12 +93,6 @@ public class Logincontroller {
             ResultSet resultSet = preparedStatement.executeQuery();
 
             if(resultSet.next()){
-//                user = new User();
-//                user.name = resultSet.getString("name");
-//                user.age = resultSet.getString("age");
-//                user.phone = resultSet.getString("phone");
-//                user.nik = resultSet.getString("nik");
-//                user.password = resultSet.getString("password");
                 role = resultSet.getString("roles");
             }
 
@@ -107,7 +102,7 @@ public class Logincontroller {
         }catch(Exception e){
             e.printStackTrace();
         }
-//        return user;
+
         return role;
     }
 

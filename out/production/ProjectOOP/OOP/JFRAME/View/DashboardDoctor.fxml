@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane prefHeight="700.0" prefWidth="1145.0" style="-fx-border-color: #fff;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="OOP.JFRAME.controller.PatientController">
+<BorderPane prefHeight="700.0" prefWidth="1145.0" style="-fx-border-color: #fff;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="OOP.JFRAME.controller.DoctorController">
     <left>
         <VBox alignment="TOP_CENTER" prefHeight="637.0" prefWidth="171.0" spacing="15.0" style="-fx-background-color: #008081;" BorderPane.alignment="CENTER">
             <children>
@@ -85,7 +85,7 @@
             <top>
                 <HBox alignment="CENTER_LEFT" prefHeight="57.0" prefWidth="971.0" style="-fx-background-color: #ffffff;" BorderPane.alignment="CENTER">
                     <children>
-                        <Label prefHeight="22.0" prefWidth="462.0" text="Welcome to We Care Application!">
+                        <Label prefHeight="22.0" prefWidth="462.0" text="Welcome Doctor!">
                             <font>
                                 <Font name="Arial" size="18.0" />
                             </font>
