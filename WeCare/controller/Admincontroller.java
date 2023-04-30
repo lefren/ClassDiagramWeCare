@@ -15,7 +15,7 @@ import javafx.stage.Stage;
 import java.io.IOException;
 import java.util.Objects;
 
-public class controller {
+public class Admincontroller {
 
     @FXML
     private Button admcancelbtn;
@@ -63,6 +63,10 @@ public class controller {
 
     @FXML
     void admupdate(ActionEvent event) {
+
+    }
+
+    private void updateadmin(){
 
     }
 

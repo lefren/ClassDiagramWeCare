@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane prefHeight="700.0" prefWidth="1145.0" style="-fx-border-color: #fff;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="OOP.JFRAME.controller.HospitalController">
+<BorderPane prefHeight="700.0" prefWidth="1145.0" style="-fx-border-color: #fff;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="OOP.JFRAME.controller.AdminHospitalController">
     <left>
         <VBox alignment="TOP_CENTER" prefHeight="637.0" prefWidth="171.0" spacing="15.0" style="-fx-background-color: #008081;" BorderPane.alignment="CENTER">
             <children>

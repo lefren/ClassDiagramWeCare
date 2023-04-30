@@ -17,7 +17,7 @@ import javafx.stage.Stage;
 import java.io.IOException;
 import java.util.Objects;
 
-public class AppointmentListController {
+public class AdminAppointmentListController {
 
     @FXML
     private Hyperlink admlogoutbtn;

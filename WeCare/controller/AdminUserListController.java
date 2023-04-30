@@ -18,7 +18,7 @@ import java.sql.*;
 import java.util.Objects;
 import java.util.ResourceBundle;
 
-public class ListController implements Initializable {
+public class AdminUserListController implements Initializable {
     @FXML
     private Hyperlink admlogoutbtn;
     @FXML

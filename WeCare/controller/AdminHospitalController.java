@@ -1,6 +1,6 @@
 package OOP.JFRAME.controller;
 
-import OOP.JFRAME.Doctor;
+import OOP.JFRAME.Hospital;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -20,10 +20,11 @@ import java.sql.*;
 import java.util.Objects;
 import java.util.ResourceBundle;
 
-public class DoctorController implements Initializable {
+public class AdminHospitalController implements Initializable {
 
     @FXML
-    private Button addnewdoctor;
+    private Button addnewhospital;
+
     @FXML
     private Hyperlink admlogoutbtn;
 
@@ -31,28 +32,23 @@ public class DoctorController implements Initializable {
     private Button appointmentbutton;
 
     @FXML
-    private TableView<Doctor> tableviewid;
-    @FXML
-    private TableColumn<Doctor, String> strnumid;
-    @FXML
-    private TableColumn<Doctor, String> doctornameid;
-    @FXML
-    private TableColumn<Doctor, String> experienceid;
-    @FXML
-    private TableColumn<Doctor, String> hospitalid;
-    @FXML
-    private TableColumn<Doctor, String> phonenumid;
-    @FXML
-    private TableColumn<Doctor, Void> controlid;
-
-    @FXML
     private Button doctorbutton;
+    @FXML
+    private TableView<Hospital> tableviewid;
+    @FXML
+    private TableColumn<Hospital, String> hospitaladdressid;
+    @FXML
+    private TableColumn<Hospital, String>  hospitalnameid;
+    @FXML
+    private TableColumn<Hospital, String>  hospitalphoneid;
+    @FXML
+    private TableColumn<Hospital, Void>  hospitalcontrol;
 
     @FXML
     private Button hospitalbutton;
 
     @FXML
-    private Label labeltotaldoctorid;
+    private Label labeltotalhospitalid;
 
     @FXML
     private Button overviewbutton;
@@ -62,50 +58,32 @@ public class DoctorController implements Initializable {
 
     @FXML
     private Button settingsbtn;
-
-    Doctor doctor = null;
+    Hospital hospital = null;
     final String DB_URL = "jdbc:mysql://localhost/projectoop?serverTimezone=UTC";
     final String USERNAME = "root";
     final String PASS = "";
-
-
-    @FXML
-    void addnewdoctorbtn(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("../view/adminregisterdoctor.fxml")));
-        Scene scene = new Scene(root);
-        Stage stage = new Stage();
-
-        stage.setScene(scene);
-        stage.initStyle(StageStyle.UTILITY);
-        stage.show();
-        stage.centerOnScreen();
-    }
-
-
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle){
-        loadDate();
+        loaddate();
 
-        doctornameid.setCellValueFactory(new PropertyValueFactory<>("doctorName"));
-        strnumid.setCellValueFactory(new PropertyValueFactory<>("nomorStr"));
-        phonenumid.setCellValueFactory(new PropertyValueFactory<>("phoneNum"));
-        hospitalid.setCellValueFactory(new PropertyValueFactory<>("hospitalPlace"));
-        experienceid.setCellValueFactory(new PropertyValueFactory<>("pengalamanKerja"));
+        hospitalnameid.setCellValueFactory(new PropertyValueFactory<>("hospital_name"));
+        hospitaladdressid.setCellValueFactory(new PropertyValueFactory<>("address"));
+        hospitalphoneid.setCellValueFactory(new PropertyValueFactory<>("no_telp"));
 
-        controlid.setCellFactory(param -> new TableCell<>() {
+        hospitalcontrol.setCellFactory(param -> new TableCell<>() {
 
             private final Button deleteButton = new Button("DELETE");
             private final Button editButton = new Button("EDIT");
 
             {
                 deleteButton.setOnAction(event -> {
-                    Doctor doctor = getTableView().getItems().get(getIndex());
-                    deletedoctor(doctor);
+                    Hospital hospital = getTableView().getItems().get(getIndex());
+                    deletehospital(hospital);
                 });
 
                 editButton.setOnAction(event -> {
-                    Doctor doctor = getTableView().getItems().get(getIndex());
-                    updatedoctor(doctor);
+                    Hospital hospital = getTableView().getItems().get(getIndex());
+                    edithospital(hospital);
                 });
             }
 
@@ -127,33 +105,29 @@ public class DoctorController implements Initializable {
         try {
 
             Connection connection = DriverManager.getConnection(DB_URL, USERNAME, PASS);
-            String query = "SELECT COUNT(*) FROM doctor";
+            String query = "SELECT COUNT(*) FROM hospital";
             PreparedStatement statement = connection.prepareStatement(query);
             ResultSet result = statement.executeQuery();
             result.next();
-            int totaldoctor = result.getInt(1);
-            labeltotaldoctorid.setText("" + totaldoctor);
+            int totalhospital = result.getInt(1);
+            labeltotalhospitalid.setText("" + totalhospital);
         } catch (SQLException e) {
             e.printStackTrace();
         }
     }
-
-    private void loadDate(){
+    private void loaddate(){
         try {
             Connection conn = DriverManager.getConnection(DB_URL, USERNAME, PASS);
-            String query = "SELECT * FROM doctor";
+            String query = "SELECT * FROM hospital";
             PreparedStatement statement = conn.prepareStatement(query);
             ResultSet result = statement.executeQuery();
 
             while (result.next()) {
-                Doctor doctor = new Doctor(
-                        result.getString("doctor_name"),
-                        result.getString("nomor_str"),
-                        result.getString("phone_num"),
-                        result.getString("hospital_place"),
-                        result.getString("pengalaman_kerja")
-                );
-                tableviewid.getItems().add(doctor);
+                Hospital hospital = new Hospital(
+                        result.getString("hospital_name")
+                        , result.getString("address")
+                        , result.getString("notelp_rs"));
+                tableviewid.getItems().add(hospital);
             }
             conn.close();
         } catch (SQLException e) {
@@ -161,22 +135,34 @@ public class DoctorController implements Initializable {
         }
     }
 
-    private void deletedoctor(Doctor doctor) {
+    private void edithospital(Hospital hospital){
+
+    }
+
+    private void deletehospital(Hospital hospital) {
         try {
             Connection conn = DriverManager.getConnection(DB_URL, USERNAME, PASS);
-            String query = "DELETE FROM doctor WHERE nomor_str = ?";
+            String query = "DELETE FROM hospital WHERE address = ?";
             PreparedStatement statement = conn.prepareStatement(query);
-            statement.setString(1, doctor.getNomorStr());
+            statement.setString(1, hospital.getAddress());
             statement.executeUpdate();
-            tableviewid.getItems().remove(doctor);
+            tableviewid.getItems().remove(hospital);
             conn.close();
         } catch (SQLException e) {
             e.printStackTrace();
         }
     }
 
-    private void updatedoctor(Doctor doctor) {
+    @FXML
+    void addnewhospitalbtn(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("../view/adminregisterhospital.fxml")));
+        Scene scene = new Scene(root);
+        Stage stage = new Stage();
 
+        stage.setScene(scene);
+        stage.initStyle(StageStyle.UTILITY);
+        stage.show();
+        stage.centerOnScreen();
     }
 
     @FXML
@@ -259,5 +245,4 @@ public class DoctorController implements Initializable {
         stage.show();
         stage.centerOnScreen();
     }
-
 }

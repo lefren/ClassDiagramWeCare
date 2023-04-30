@@ -1,5 +1,5 @@
 package OOP.JFRAME.controller;
-import OOP.JFRAME.User;
+
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -44,16 +44,23 @@ public class Logincontroller {
         String nik = lognik.getText();
         String pass = logpass.getText();
 
-        user = getAuthenticatedUser(nik,pass);
+        String role = getAuthenticatedUser(nik,pass);
 
-        if(user != null){
-            Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("../view/dashboardadmin.fxml")));
+        if(role != null){
+            Parent root;
+            if (role.equals("admin")) {
+                root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("../view/dashboardadminoverview.fxml")));
+            } else {
+                root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("../view/dashboardpatient.fxml")));
+            }
+
             Scene scene = new Scene(root);
 
             Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
             stage.setScene(scene);
             stage.show();
             stage.centerOnScreen();
+
         }else{
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.initOwner(loginStage);
@@ -65,9 +72,10 @@ public class Logincontroller {
         }
     }
 
-    public User user;
-    private User getAuthenticatedUser(String nik, String pass){
-        User user = null;
+//    public User user;
+    private String getAuthenticatedUser(String nik, String pass){
+//        User user = null;
+        String role = null;
         final String DB_URL = "jdbc:mysql://localhost/projectoop?serverTimezone=UTC";
         final String USERNAME = "root";
         final String PASS = "";
@@ -76,7 +84,7 @@ public class Logincontroller {
             Connection conn = DriverManager.getConnection(DB_URL, USERNAME, PASS);
 
             Statement statement = conn.createStatement();
-            String sql = "SELECT * FROM users WHERE nik=? AND password=?" ;
+            String sql = "SELECT roles FROM users WHERE nik=? AND password=?" ;
             PreparedStatement preparedStatement = conn.prepareStatement(sql);
             preparedStatement.setString(1, nik);
             preparedStatement.setString(2, pass);
@@ -84,12 +92,13 @@ public class Logincontroller {
             ResultSet resultSet = preparedStatement.executeQuery();
 
             if(resultSet.next()){
-                user = new User();
-                user.name = resultSet.getString("name");
-                user.age = resultSet.getString("age");
-                user.phone = resultSet.getString("phone");
-                user.nik = resultSet.getString("nik");
-                user.password = resultSet.getString("password");
+//                user = new User();
+//                user.name = resultSet.getString("name");
+//                user.age = resultSet.getString("age");
+//                user.phone = resultSet.getString("phone");
+//                user.nik = resultSet.getString("nik");
+//                user.password = resultSet.getString("password");
+                role = resultSet.getString("roles");
             }
 
             statement.close();
@@ -98,7 +107,8 @@ public class Logincontroller {
         }catch(Exception e){
             e.printStackTrace();
         }
-        return user;
+//        return user;
+        return role;
     }
 
 }

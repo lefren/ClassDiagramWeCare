@@ -9,48 +9,74 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane prefHeight="700.0" prefWidth="1145.0" style="-fx-border-color: #fff;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="OOP.JFRAME.controller.controller">
+<BorderPane prefHeight="700.0" prefWidth="1145.0" style="-fx-border-color: #fff;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="OOP.JFRAME.controller.PatientController">
     <left>
-        <VBox alignment="TOP_CENTER" prefHeight="637.0" prefWidth="171.0" spacing="15.0" style="-fx-background-color: #243292;" BorderPane.alignment="CENTER">
+        <VBox alignment="TOP_CENTER" prefHeight="637.0" prefWidth="171.0" spacing="15.0" style="-fx-background-color: #008081;" BorderPane.alignment="CENTER">
             <children>
-                <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="268.0" style="-fx-background-color: transparent;" text="Home" textFill="#fdfefc">
+                <Label text="WeCare" textFill="WHITE">
                     <font>
-                        <Font name="System Bold" size="14.0" />
+                        <Font size="40.0" />
                     </font>
-                </Button>
-                <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="177.0" style="-fx-background-color: transparent;" text="Doctor" textFill="#fdfefc">
-                    <font>
-                        <Font size="14.0" />
-                    </font>
-                </Button>
-                <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="223.0" style="-fx-background-color: transparent;" text="Patient" textFill="#fdfefc">
-                    <font>
-                        <Font size="14.0" />
-                    </font>
-                </Button>
-                <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="329.0" style="-fx-background-color: transparent;" text="Hospital" textFill="#fdfefc">
-                    <font>
-                        <Font size="14.0" />
-                    </font>
-                </Button>
-                <VBox alignment="BOTTOM_CENTER" prefHeight="443.0" prefWidth="151.0">
+                </Label>
+                <VBox prefHeight="488.0" prefWidth="151.0" spacing="10.0">
                     <children>
-                        <Button alignment="BOTTOM_CENTER" contentDisplay="BOTTOM" mnemonicParsing="false" prefHeight="25.0" prefWidth="490.0" style="-fx-background-color: transparent;" text="Settings" textFill="#fdfefc">
-                            <VBox.margin>
-                                <Insets />
-                            </VBox.margin>
+                        <Label prefHeight="17.0" prefWidth="192.0" text="Main Menu" textFill="#2e2e2e">
+                            <padding>
+                                <Insets left="8.0" />
+                            </padding>
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Label>
+                        <Button fx:id="overviewbutton" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#overviewbtn" prefHeight="30.0" prefWidth="178.0" style="-fx-background-color: transparent;" text="Overview" textFill="#fdfefc">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="appointmentbutton" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#appointmentbtn" prefHeight="25.0" prefWidth="223.0" style="-fx-background-color: transparent;" text="Appointment" textFill="#fdfefc">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Button>
+                        <Label prefHeight="17.0" prefWidth="281.0" text="Other Menu" textFill="#2e2e2e">
+                            <padding>
+                                <Insets left="8.0" />
+                            </padding>
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Label>
+                        <Button fx:id="doctorbutton" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#doctorbtn" prefHeight="25.0" prefWidth="177.0" style="-fx-background-color: transparent;" text="Doctor List" textFill="#fdfefc">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="hospitalbutton" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#hospitalbtn" prefHeight="25.0" prefWidth="329.0" style="-fx-background-color: transparent;" text="Hospital List" textFill="#fdfefc">
                             <font>
                                 <Font size="14.0" />
                             </font>
                         </Button>
                     </children>
+                    <padding>
+                        <Insets left="5.0" right="5.0" />
+                    </padding>
                 </VBox>
+                <Button alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="25.0" prefWidth="177.0" style="-fx-background-color: transparent;" text="Help Desk" textFill="#fdfefc">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Button>
+                <Button fx:id="settingsbtn" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#settingsbtn" prefHeight="25.0" prefWidth="177.0" style="-fx-background-color: transparent;" text="Settings" textFill="#fdfefc">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Button>
             </children>
             <BorderPane.margin>
                 <Insets />
             </BorderPane.margin>
             <padding>
-                <Insets bottom="10.0" left="10.0" right="10.0" top="40.0" />
+                <Insets bottom="10.0" left="10.0" right="10.0" top="30.0" />
             </padding>
         </VBox>
     </left>
@@ -59,14 +85,14 @@
             <top>
                 <HBox alignment="CENTER_LEFT" prefHeight="57.0" prefWidth="971.0" style="-fx-background-color: #ffffff;" BorderPane.alignment="CENTER">
                     <children>
-                        <Label text="Dashboard Patient">
+                        <Label prefHeight="22.0" prefWidth="462.0" text="Welcome to We Care Application">
                             <font>
                                 <Font name="Arial" size="18.0" />
                             </font>
                         </Label>
                         <HBox alignment="CENTER_RIGHT" prefHeight="57.0" prefWidth="700.0">
                             <children>
-                                <Hyperlink fx:id="admlogoutbtn" onAction="#admlogout" text="Logout">
+                                <Hyperlink fx:id="admlogoutbtn" onAction="#admlogout" text="Logout" textFill="#008081">
                                     <font>
                                         <Font size="14.0" />
                                     </font>
@@ -86,12 +112,47 @@
                 </HBox>
             </top>
             <center>
-                <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+                <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                    <center>
+                        <BorderPane prefHeight="510.0" prefWidth="871.0" BorderPane.alignment="CENTER">
+                            <BorderPane.margin>
+                                <Insets bottom="50.0" left="50.0" right="50.0" />
+                            </BorderPane.margin>
+                            <left>
+                                <VBox prefHeight="238.0" prefWidth="193.0" BorderPane.alignment="CENTER" />
+                            </left>
+                        </BorderPane>
+                    </center>
+                    <top>
+                        <HBox prefHeight="0.0" prefWidth="952.0" style="-fx-background-color: #f3f3f3;" BorderPane.alignment="CENTER">
+                            <children>
+                                <VBox prefHeight="42.0" prefWidth="582.0">
+                                    <children>
+                                        <Label style="-fx-font-weight: bold;" text="Overview">
+                                            <font>
+                                                <Font size="17.0" />
+                                            </font>
+                                        </Label>
+                                    </children>
+                                    <HBox.margin>
+                                        <Insets left="30.0" right="30.0" />
+                                    </HBox.margin>
+                                </VBox>
+                            </children>
+                            <BorderPane.margin>
+                                <Insets left="20.0" />
+                            </BorderPane.margin>
+                            <padding>
+                                <Insets bottom="5.0" top="5.0" />
+                            </padding>
+                        </HBox>
+                    </top>
+                </BorderPane>
             </center>
         </BorderPane>
     </center>
     <bottom>
-        <HBox alignment="CENTER" prefHeight="20.0" prefWidth="1142.0" style="-fx-background-color: #243292;" BorderPane.alignment="CENTER">
+        <HBox alignment="CENTER" prefHeight="20.0" prefWidth="1142.0" style="-fx-background-color: #008081;" BorderPane.alignment="CENTER">
             <children>
                 <Label graphicTextGap="5.0" lineSpacing="2.0" opacity="0.65" prefHeight="7.0" prefWidth="457.0" text="Copyright © 2023 Bella Arsita Ginting, Ichsan Ilyasa, and Ferren Andrea. All Rights Reserved." textAlignment="CENTER" textFill="WHITE">
                     <font>
