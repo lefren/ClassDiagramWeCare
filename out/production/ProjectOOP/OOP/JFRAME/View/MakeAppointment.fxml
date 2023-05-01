@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="OOP.JFRAME.controller.MakeAppointment">
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" spacing="8.0" BorderPane.alignment="CENTER">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Make Appointment">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Text>
+            <Label text="Doctor">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="comboboxdoctor" prefHeight="26.0" prefWidth="670.0" promptText="Choose Doctor" style="-fx-border-color: #008081; -fx-background-color: transparent; -fx-border-radius: 20;" />
+            <Label text="Hospital">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="comboboxhospital" prefHeight="26.0" prefWidth="838.0" promptText="Choose Hospital" style="-fx-border-color: #008081; -fx-background-color: transparent; -fx-border-radius: 20;" />
+            <Label text="Full Name">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="textfname" promptText="Full Name" style="-fx-border-color: #008081; -fx-background-color: transparent; -fx-border-radius: 20;" />
+            <Label>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <HBox prefHeight="34.0" prefWidth="539.0" spacing="30.0">
+               <children>
+                  <Button fx:id="apt" mnemonicParsing="false" onAction="#aptbtn" prefHeight="35.0" prefWidth="148.0" style="-fx-background-color: #008081; -fx-background-radius: 20;" text="Appointment" textFill="WHITE" />
+                  <Button fx:id="cancl" mnemonicParsing="false" onAction="#cnclbtn" prefHeight="35.0" prefWidth="148.0" style="-fx-background-color: transparent; -fx-border-color: #008081; -fx-border-radius: 20;" text="Cancel" />
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+         </padding>
+      </VBox>
+   </center>
+</BorderPane>

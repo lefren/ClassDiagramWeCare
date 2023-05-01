@@ -5,8 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1aaec7a7-6e4d-4478-8b85-d2996436fbe4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/check_mark.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WeCare/Appointment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WeCare/controller/MakeAppointment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WeCare/controller/Payment2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeCare/View/DashboardPatientAppointment.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/WeCare/View/DashboardPatientAppointment.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeCare/View/DashboardPatientHospital.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/WeCare/View/DashboardPatientHospital.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeCare/View/payment1.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/WeCare/View/payment1.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WeCare/View/payment2.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/WeCare/View/payment2.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeCare/View/payment3.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/WeCare/View/MakeAppointment.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeCare/controller/PatientAppointmentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/WeCare/controller/PatientAppointmentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeCare/controller/Payment.java" beforeDir="false" afterPath="$PROJECT_DIR$/WeCare/controller/Payment1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/View/DashboardPatientAppointment.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/View/DashboardPatientAppointment.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/View/DashboardPatientHospital.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/View/DashboardPatientHospital.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/View/payment1.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/View/payment1.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/View/payment2.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/View/payment2.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/View/payment3.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/controller/PatientAppointmentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/controller/PatientAppointmentController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/controller/Payment.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

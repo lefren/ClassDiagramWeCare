@@ -11,16 +11,19 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="589.0" prefWidth="776.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="589.0" prefWidth="776.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="OOP.JFRAME.controller.Payment1">
    <center>
       <VBox prefHeight="490.0" prefWidth="776.0" spacing="20.0" BorderPane.alignment="CENTER">
          <children>
-            <HBox prefHeight="55.0" prefWidth="776.0" style="-fx-background-color: #008081;">
+            <HBox alignment="CENTER_LEFT" prefHeight="55.0" prefWidth="776.0" style="-fx-background-color: #008081;">
                <children>
                   <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="WeCare" wrappingWidth="164.66680908203125">
                      <font>
                         <Font size="36.0" />
                      </font>
+                     <HBox.margin>
+                        <Insets left="30.0" />
+                     </HBox.margin>
                   </Text>
                </children>
                <opaqueInsets>

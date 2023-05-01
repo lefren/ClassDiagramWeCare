@@ -4,6 +4,8 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Hyperlink?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
@@ -111,11 +113,37 @@
                     <center>
                         <BorderPane prefHeight="510.0" prefWidth="871.0" BorderPane.alignment="CENTER">
                             <BorderPane.margin>
-                                <Insets bottom="50.0" left="50.0" right="50.0" />
+                                <Insets bottom="50.0" left="50.0" right="50.0" top="10.0" />
                             </BorderPane.margin>
-                            <left>
-                                <VBox prefHeight="238.0" prefWidth="193.0" BorderPane.alignment="CENTER" />
-                            </left>
+                     <center>
+                        <TableView fx:id="appointmentlist" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                          <columns>
+                            <TableColumn fx:id="numberid" prefWidth="81.59997403621674" style="-fx-background-color: #008081; -fx-text-fill: #fff;">
+                                 <graphic>
+                                    <Label text="No" textFill="WHITE" />
+                                 </graphic>
+                              </TableColumn>
+                              <TableColumn fx:id="hospitalnameid" prefWidth="384.7999954223633" style="-fx-background-color: #008081; -fx-text-fill: #fff;">
+                                 <graphic>
+                                    <Label text="Hospital Name" textFill="WHITE" />
+                                 </graphic>
+                              </TableColumn>
+                              <TableColumn fx:id="doctornameid" prefWidth="253.60000610351562" style="-fx-background-color: #008081; -fx-text-fill: #fff;">
+                                 <graphic>
+                                    <Label text="Doctor Name" textFill="WHITE" />
+                                 </graphic>
+                              </TableColumn>
+                              <TableColumn fx:id="controlid" prefWidth="151.2000610351563" style="-fx-background-color: #008081; -fx-: #fff;">
+                                 <graphic>
+                                    <Label text="Control" textFill="WHITE" />
+                                 </graphic>
+                              </TableColumn>
+                          </columns>
+                           <BorderPane.margin>
+                              <Insets top="10.0" />
+                           </BorderPane.margin>
+                        </TableView>
+                     </center>
                         </BorderPane>
                     </center>
                     <top>
@@ -123,7 +151,7 @@
                             <children>
                                 <VBox prefHeight="42.0" prefWidth="582.0">
                                     <children>
-                                        <Label style="-fx-font-weight: bold;" text="Overview">
+                                        <Label style="-fx-font-weight: bold;" text="Appointment">
                                             <font>
                                                 <Font size="17.0" />
                                             </font>
@@ -133,9 +161,14 @@
                                         <Insets left="30.0" right="30.0" />
                                     </HBox.margin>
                                 </VBox>
+                        <HBox alignment="CENTER_RIGHT" prefHeight="42.0" prefWidth="260.0">
+                           <children>
+                              <Button fx:id="makeappointment" mnemonicParsing="false" onAction="#makeappointmentbtn" prefHeight="26.0" prefWidth="177.0" style="-fx-background-color: #008081; -fx-background-radius: 20;" text="Add New Doctor" textFill="WHITE" />
+                           </children>
+                        </HBox>
                             </children>
                             <BorderPane.margin>
-                                <Insets left="20.0" />
+                                <Insets left="20.0" top="10.0" />
                             </BorderPane.margin>
                             <padding>
                                 <Insets bottom="5.0" top="5.0" />
