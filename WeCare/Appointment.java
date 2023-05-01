@@ -23,3 +23,4 @@ public class Appointment {
         return doctorName;
     }
 }
+
