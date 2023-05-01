@@ -4,21 +4,21 @@ import OOP.JFRAME.Doctor;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Alert;
-import javafx.scene.control.Button;
-import javafx.scene.control.PasswordField;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.stage.Stage;
 import javafx.stage.Window;
 
 import java.io.IOException;
+import java.net.URL;
 import java.sql.*;
 import java.util.Objects;
+import java.util.ResourceBundle;
 
-public class CRUDDoctorController {
+public class CRUDDoctorController implements Initializable {
 
     @FXML
     private Button btncancel;
@@ -42,10 +42,35 @@ public class CRUDDoctorController {
     private TextField doctorphoneid;
 
     @FXML
-    private TextField hospitalid;
+    private ComboBox<String> hospitalid;
 
     @FXML
     private TextField strnumberid;
+    @Override
+    public void initialize(URL url, ResourceBundle rb) {
+        populateHospitalComboBox();
+    }
+    private void populateHospitalComboBox() {
+        final String DB_URL = "jdbc:mysql://localhost/projectoop?serverTimezone=UTC";
+        final String USERNAME = "root";
+        final String PASS = "";
+
+        try (Connection conn = DriverManager.getConnection(DB_URL, USERNAME, PASS)) {
+            String query = "SELECT * FROM hospital";
+            PreparedStatement preparedStatement = conn.prepareStatement(query);
+            ResultSet resultSet = preparedStatement.executeQuery();
+
+            while (resultSet.next()) {
+                String hospitalName = resultSet.getString("hospital_name");
+                hospitalid.getItems().add(hospitalName);
+            }
+
+            resultSet.close();
+            preparedStatement.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
 
     @FXML
     void docbtncancel(ActionEvent event) throws IOException {
@@ -70,6 +95,14 @@ public class CRUDDoctorController {
             alert.setContentText("Registration successful");
 
             alert.showAndWait();
+
+            Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("../view/dashboardadmindoctor.fxml")));
+            Scene scene = new Scene(root);
+
+            Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+            stage.setScene(scene);
+            stage.show();
+            stage.centerOnScreen();
         }else{
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.initOwner(stage);
@@ -88,7 +121,7 @@ public class CRUDDoctorController {
         String name = doctornameid.getText();
         String strnum = strnumberid.getText();
         String phonenum = doctorphoneid.getText();
-        String hospital = hospitalid.getText();
+        String hospital = hospitalid.getValue();
         String experience = doctorexperience.getText();
         String password = doctorpassword.getText();
         String conf_pass = doctorconfirmpassword.getText();

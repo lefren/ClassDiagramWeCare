@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<!-- Header -->
+<header th:id="page-header">
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+
+        <a class="navbar-brand" target="_blank" href="https://midtrans.com"><img style="max-height: 25px;"
+                                                                                 src="https://midtrans.com/assets/img/logo.svg"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/snap">Snap Demo <span class="sr-only"></span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/api/core-api">Core API<span class="sr-only"></span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="/api/iris" id="navbarIris" role="button"
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Iris Disbursement
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarIris">
+                        <a class="dropdown-item" href="/iris/payouts">1. Create & Approve/Reject Payouts</a>
+                        <a class="dropdown-item" href="/iris/index">2. Transaction History</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/mobile-sdk">Mobile SDK <span class="sr-only"></span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="/api/core-api" id="navbarDocs" role="button"
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Documentation
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDocs">
+                        <a class="dropdown-item" target="_blank" href="https://docs.midtrans.com">Midtrans Docs</a>
+                        <a class="dropdown-item" target="_blank" href="https://github.com/Midtrans/midtrans-java/">Library Docs</a>
+                        <a class="dropdown-item" target="_blank" href="https://midtrans.github.io/midtrans-java/">Java Docs</a>
+                        <a class="dropdown-item" target="_blank" href="https://iris-docs.midtrans.com/">Iris Docs</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+</html>

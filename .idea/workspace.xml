@@ -5,15 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1aaec7a7-6e4d-4478-8b85-d2996436fbe4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/WeCare/View/DashboardDoctor.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WeCare/controller/DoctorController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WeCare/View/DashboardPatientAppointment.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WeCare/View/payment1.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WeCare/View/payment2.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WeCare/View/payment3.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WeCare/controller/PatientAppointmentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WeCare/controller/Payment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jar/java-json.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-json.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-library-3.1.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment/java-library-3.1.4.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WeCare/View/DashboardPatient.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/WeCare/View/DashboardPatient.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectOOP.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectOOP.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeCare/View/AdminRegisterDoctor.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/WeCare/View/AdminRegisterDoctor.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WeCare/controller/CRUDDoctorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/WeCare/controller/CRUDDoctorController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WeCare/controller/Logincontroller.java" beforeDir="false" afterPath="$PROJECT_DIR$/WeCare/controller/Logincontroller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/View/DashboardPatient.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/View/DashboardPatient.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeCare/controller/PatientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/WeCare/controller/PatientController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/View/AdminRegisterDoctor.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/View/AdminRegisterDoctor.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/controller/CRUDDoctorController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/controller/CRUDDoctorController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/controller/Logincontroller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/controller/Logincontroller.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/controller/PatientController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/controller/PatientController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -47,8 +55,8 @@
         <option value="module-info" />
         <option value="HTML File" />
         <option value="JavaFXApplication" />
-        <option value="FxmlFile" />
         <option value="Class" />
+        <option value="FxmlFile" />
       </list>
     </option>
   </component>
@@ -66,29 +74,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;19&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/ProjectOOP/jar/fontawesomefx-8.0.1.jar.zip&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.JavaFX&quot;,
-    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "dart.analysis.tool.window.visible": "false",
+    "ignore.virus.scanning.warn.message": "true",
+    "jdk.selected.JAVA_MODULE": "19",
+    "last_opened_file_path": "C:/ProjectOOP/midtrans-java-master.zip",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "preferences.JavaFX",
+    "show.migrate.to.gradle.popup": "false"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\ProjectOOP\WeCare\View" />
