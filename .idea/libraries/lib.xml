@@ -2,9 +2,14 @@
   <library name="lib">
     <CLASSES>
       <root url="file://$PROJECT_DIR$/javafx-sdk-20/lib" />
+      <root url="jar://$PROJECT_DIR$/java-json.jar!/" />
+      <root url="jar://$PROJECT_DIR$/java-library-3.1.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/mysql-connector-j-8.0.32.jar!/" />
     </CLASSES>
     <JAVADOC />
-    <SOURCES />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/java-json.jar!/" />
+    </SOURCES>
     <jarDirectory url="file://$PROJECT_DIR$/javafx-sdk-20/lib" recursive="false" />
   </library>
 </component>
