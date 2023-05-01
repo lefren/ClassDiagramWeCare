@@ -28,7 +28,7 @@
                                 <Font size="14.0" />
                             </font>
                         </Label>
-                        <Button fx:id="overviewpatientbutton" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#overviewpatientbtn" prefHeight="30.0" prefWidth="178.0" style="-fx-background-color: transparent;" text="🏠 Home" textFill="#fdfefc">
+                        <Button fx:id="overviewpatientbutton" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#overviewpatientbtn" prefHeight="30.0" prefWidth="178.0" style="-fx-background-color: transparent;" text="🏠 Home" textFill="#181818">
                             <font>
                                 <Font size="14.0" />
                             </font>
@@ -62,11 +62,6 @@
                     </padding>
                 </VBox>
                 <Button alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="25.0" prefWidth="177.0" style="-fx-background-color: transparent;" text="Help Desk" textFill="#fdfefc">
-                    <font>
-                        <Font size="14.0" />
-                    </font>
-                </Button>
-                <Button fx:id="settingsbtn" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#settingsbtn" prefHeight="25.0" prefWidth="177.0" style="-fx-background-color: transparent;" text="Settings" textFill="#fdfefc">
                     <font>
                         <Font size="14.0" />
                     </font>

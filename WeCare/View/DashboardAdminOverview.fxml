@@ -30,7 +30,7 @@
                                 <Font size="14.0" />
                             </font>
                         </Label>
-                        <Button alignment="TOP_LEFT" mnemonicParsing="false" onAction="#overviewbtn" prefHeight="30.0" prefWidth="178.0" style="-fx-background-color: transparent;" text="Overview" textFill="#fdfefc">
+                        <Button alignment="TOP_LEFT" mnemonicParsing="false" onAction="#overviewbtn" prefHeight="30.0" prefWidth="178.0" style="-fx-background-color: transparent;" text="Overview">
                             <font>
                                 <Font size="14.0" />
                             </font>

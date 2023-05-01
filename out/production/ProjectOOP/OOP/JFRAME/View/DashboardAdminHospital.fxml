@@ -58,7 +58,7 @@
                                 <Font size="14.0" />
                             </font>
                         </Button>
-                        <Button fx:id="hospitalbutton" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#hospitalbtn" prefHeight="25.0" prefWidth="329.0" style="-fx-background-color: transparent;" text="Hospital" textFill="#fdfefc">
+                        <Button fx:id="hospitalbutton" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#hospitalbtn" prefHeight="25.0" prefWidth="329.0" style="-fx-background-color: transparent;" text="Hospital">
                             <font>
                                 <Font size="14.0" />
                             </font>

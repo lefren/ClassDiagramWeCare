@@ -11,7 +11,6 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="589.0" prefWidth="776.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
    <center>
       <VBox prefHeight="490.0" prefWidth="776.0" spacing="20.0" BorderPane.alignment="CENTER">
@@ -24,6 +23,9 @@
                      </font>
                   </Text>
                </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
             </HBox>
             <VBox prefHeight="56.0" prefWidth="322.0">
                <children>
@@ -37,7 +39,7 @@
             </VBox>
             <HBox prefHeight="69.0" prefWidth="716.0">
                <children>
-                  <TextField prefHeight="59.0" prefWidth="716.0" promptText="123 * 456 * 789 * 0123" style="-fx-background-color: #fff; -fx-border-color: #008081; -fx-border-radius: 10;" />
+                  <TextField fx:id="cardnumberid" prefHeight="59.0" prefWidth="716.0" promptText="123 * 456 * 789 * 0123" style="-fx-background-color: #fff; -fx-border-color: #008081; -fx-border-radius: 10; -fx-background-radius: 10;" />
                </children>
             </HBox>
             <HBox prefHeight="100.0" prefWidth="200.0">
@@ -52,7 +54,7 @@
                         <Label text="Enter the 3 or 4 digit number on the card" />
                      </children>
                   </VBox>
-                  <TextField prefHeight="50.0" prefWidth="483.0" promptText="123" style="-fx-background-color: #fff; -fx-border-color: #008081; -fx-border-radius: 10;" />
+                  <TextField fx:id="cvvnumberid" prefHeight="50.0" prefWidth="483.0" promptText="123" style="-fx-background-color: #fff; -fx-border-color: #008081; -fx-border-radius: 10; -fx-background-radius: 10;" />
                </children>
             </HBox>
             <HBox prefHeight="100.0" prefWidth="200.0">
@@ -69,13 +71,13 @@
                   </VBox>
                   <HBox prefHeight="100.0" prefWidth="778.0" spacing="10.0">
                      <children>
-                        <PasswordField prefHeight="42.0" prefWidth="629.0" promptText="01" style="-fx-background-color: #fff; -fx-border-color: #008081; -fx-border-radius: 10;" />
+                        <PasswordField fx:id="monthid" prefHeight="42.0" prefWidth="629.0" promptText="01" style="-fx-background-color: #fff; -fx-border-color: #008081; -fx-border-radius: 10; -fx-background-radius: 10;" />
                         <Label text="/">
                            <font>
                               <Font size="29.0" />
                            </font>
                         </Label>
-                        <PasswordField prefHeight="42.0" prefWidth="629.0" promptText="22" style="-fx-background-color: #fff; -fx-border-color: #008081; -fx-border-radius: 10;" />
+                        <PasswordField fx:id="dayid" prefHeight="42.0" prefWidth="629.0" promptText="22" style="-fx-background-color: #fff; -fx-border-color: #008081; -fx-border-radius: 10; -fx-background-radius: 10;" />
                      </children>
                   </HBox>
                </children>
@@ -92,10 +94,10 @@
                         <Label text="Enter your Dynamic password" />
                      </children>
                   </VBox>
-                  <PasswordField prefHeight="42.0" prefWidth="629.0" promptText="*****" style="-fx-background-color: #fff; -fx-border-color: #008081; -fx-border-radius: 10;" />
+                  <PasswordField fx:id="passwordid" prefHeight="42.0" prefWidth="629.0" promptText="*****" style="-fx-background-color: #fff; -fx-border-color: #008081; -fx-border-radius: 10; -fx-background-radius: 10;" />
                </children>
             </HBox>
-            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="52.0" prefWidth="776.0" style="-fx-background-color: #008081;" text="PAY NOW" textFill="WHITE">
+            <Button fx:id="paynowid" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#paynowbtn" prefHeight="52.0" prefWidth="776.0" style="-fx-background-color: #008081; -fx-background-radius: 10;" text="PAY NOW" textFill="WHITE">
                <font>
                   <Font size="18.0" />
                </font>

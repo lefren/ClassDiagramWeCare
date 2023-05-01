@@ -40,7 +40,7 @@
                                 <Font size="14.0" />
                             </font>
                         </Button>
-                        <Button fx:id="appointmentbutton" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#appointmentbtn" prefHeight="25.0" prefWidth="223.0" style="-fx-background-color: transparent;" text="Appointment" textFill="#fdfefc">
+                        <Button fx:id="appointmentbutton" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#appointmentbtn" prefHeight="25.0" prefWidth="223.0" style="-fx-background-color: transparent;" text="Appointment">
                             <font>
                                 <Font size="14.0" />
                             </font>

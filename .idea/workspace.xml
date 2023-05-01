@@ -5,8 +5,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1aaec7a7-6e4d-4478-8b85-d2996436fbe4" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/lib.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WeCare/View/DashboardPatientDoctor.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WeCare/View/DashboardPatientHospital.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WeCare/controller/PatientDoctorController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WeCare/controller/PatientHospitalController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeCare/View/DashboardAdmin.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/WeCare/View/DashboardAdmin.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeCare/View/DashboardAdminAppointment.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/WeCare/View/DashboardAdminAppointment.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeCare/View/DashboardAdminDoctor.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/WeCare/View/DashboardAdminDoctor.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeCare/View/DashboardAdminHospital.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/WeCare/View/DashboardAdminHospital.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeCare/View/DashboardAdminOverview.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/WeCare/View/DashboardAdminOverview.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeCare/View/DashboardAdminPatient.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/WeCare/View/DashboardAdminPatient.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeCare/View/DashboardPatient.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/WeCare/View/DashboardPatient.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeCare/View/DashboardPatientAppointment.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/WeCare/View/DashboardPatientAppointment.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeCare/View/payment1.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/WeCare/View/payment1.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeCare/controller/PatientAppointmentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/WeCare/controller/PatientAppointmentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeCare/controller/PatientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/WeCare/controller/PatientController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeCare/controller/Payment.java" beforeDir="false" afterPath="$PROJECT_DIR$/WeCare/controller/Payment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/View/DashboardAdmin.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/View/DashboardAdmin.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/View/DashboardAdminAppointment.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/View/DashboardAdminAppointment.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/View/DashboardAdminDoctor.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/View/DashboardAdminDoctor.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/View/DashboardAdminHospital.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/View/DashboardAdminHospital.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/View/DashboardAdminOverview.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/View/DashboardAdminOverview.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/View/DashboardAdminPatient.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/View/DashboardAdminPatient.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/View/DashboardPatient.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/View/DashboardPatient.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/View/DashboardPatientAppointment.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/View/DashboardPatientAppointment.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/View/payment1.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/View/payment1.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/controller/PatientAppointmentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/controller/PatientAppointmentController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/controller/PatientController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/controller/PatientController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/controller/Payment.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/controller/Payment.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,8 +66,8 @@
         <option value="module-info" />
         <option value="HTML File" />
         <option value="JavaFXApplication" />
-        <option value="Class" />
         <option value="FxmlFile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -94,7 +121,7 @@
     <configuration name="DashboardAdmin" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="OOP.JFRAME.DashboardAdmin" />
       <module name="ProjectOOP" />
-      <option name="VM_PARAMETERS" value="--module-path &quot;C:\projoop\javafx-sdk-20\lib&quot; --add-modules javafx.controls,javafx.fxml " />
+      <option name="VM_PARAMETERS" value="--module-path &quot;C:\ProjectOOP\javafx-sdk-20\lib&quot; --add-modules javafx.controls,javafx.fxml " />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -138,10 +165,10 @@
     <select />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/ProjectOOP$DashboardAdmin.ic" NAME="DashboardAdmin Coverage Results" MODIFIED="1681358021733" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/ProjectOOP$main.ic" NAME="main Coverage Results" MODIFIED="1681357770348" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>OOP.JFRAME.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/ProjectOOP$main.ic" NAME="main Coverage Results" MODIFIED="1681357770348" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/ProjectOOP$DashboardAdmin.ic" NAME="DashboardAdmin Coverage Results" MODIFIED="1681358021733" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>OOP.JFRAME.*</FILTER>
     </SUITE>
   </component>

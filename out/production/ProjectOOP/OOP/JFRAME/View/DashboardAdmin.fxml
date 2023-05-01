@@ -73,7 +73,7 @@
                   <Font size="14.0" />
                </font>
             </Button>
-            <Button alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="25.0" prefWidth="177.0" style="-fx-background-color: transparent;" text="Settings" textFill="#fdfefc">
+            <Button alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="25.0" prefWidth="177.0" style="-fx-background-color: transparent;" text="Settings">
                <font>
                   <Font size="14.0" />
                </font>
