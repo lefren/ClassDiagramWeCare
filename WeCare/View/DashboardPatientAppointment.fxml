@@ -118,22 +118,22 @@
                      <center>
                         <TableView fx:id="appointmentlist" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
                           <columns>
-                            <TableColumn fx:id="numberid" prefWidth="81.59997403621674" style="-fx-background-color: #008081; -fx-text-fill: #fff;">
+                            <TableColumn fx:id="numberid" prefWidth="81.59997403621674" style="-fx-border-color: #f4f4f4; -fx-background-color: #008081;">
                                  <graphic>
                                     <Label text="No" textFill="WHITE" />
                                  </graphic>
                               </TableColumn>
-                              <TableColumn fx:id="hospitalnameid" prefWidth="384.7999954223633" style="-fx-background-color: #008081; -fx-text-fill: #fff;">
+                              <TableColumn fx:id="hospitalnameid" prefWidth="384.7999954223633" style="-fx-border-color: #f4f4f4; -fx-background-color: #008081;">
                                  <graphic>
                                     <Label text="Hospital Name" textFill="WHITE" />
                                  </graphic>
                               </TableColumn>
-                              <TableColumn fx:id="doctornameid" prefWidth="253.60000610351562" style="-fx-background-color: #008081; -fx-text-fill: #fff;">
+                              <TableColumn fx:id="doctornameid" prefWidth="253.60000610351562" style="-fx-border-color: #f4f4f4; -fx-background-color: #008081;">
                                  <graphic>
                                     <Label text="Doctor Name" textFill="WHITE" />
                                  </graphic>
                               </TableColumn>
-                              <TableColumn fx:id="controlid" prefWidth="151.2000610351563" style="-fx-background-color: #008081; -fx-: #fff;">
+                              <TableColumn fx:id="controlid" prefWidth="151.2000610351563" style="-fx-border-color: #f4f4f4; -fx-background-color: #008081;">
                                  <graphic>
                                     <Label text="Control" textFill="WHITE" />
                                  </graphic>
@@ -163,7 +163,7 @@
                                 </VBox>
                         <HBox alignment="CENTER_RIGHT" prefHeight="42.0" prefWidth="260.0">
                            <children>
-                              <Button fx:id="makeappointment" mnemonicParsing="false" onAction="#makeappointmentbtn" prefHeight="26.0" prefWidth="177.0" style="-fx-background-color: #008081; -fx-background-radius: 20;" text="Add New Doctor" textFill="WHITE" />
+                              <Button fx:id="makeappointment" mnemonicParsing="false" onAction="#makeappointmentbtn" prefHeight="26.0" prefWidth="177.0" style="-fx-background-color: #008081; -fx-background-radius: 20;" text="Make Appointment" textFill="WHITE" />
                            </children>
                         </HBox>
                             </children>

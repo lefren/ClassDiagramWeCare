@@ -142,6 +142,58 @@ public class PatientAppointmentController implements Initializable {
         numberid.setCellValueFactory(new PropertyValueFactory<>("id"));
         hospitalnameid.setCellValueFactory(new PropertyValueFactory<>("hospitalName"));
         doctornameid.setCellValueFactory(new PropertyValueFactory<>("doctorName"));
+
+        controlid.setCellFactory(param -> new TableCell<>() {
+
+            private final Button paybutton = new Button("PAY");
+            private final Label statusLabel = new Label("PENDING");
+            {
+                paybutton.setOnAction(event -> {
+                    Appointment apptmt = getTableView().getItems().get(getIndex());
+                    try {
+                        payappointment(apptmt);
+                    } catch (IOException e) {
+                        throw new RuntimeException(e);
+                    }
+                });
+
+                statusLabel.setStyle("-fx-font-weight: bold");
+                setGraphic(new HBox(10, paybutton, statusLabel));
+            }
+            @Override
+            protected void updateItem(Void item, boolean empty) {
+                super.updateItem(item, empty);
+
+                if (empty) {
+                    setGraphic(null);
+                } else {
+                    Appointment apptmt = getTableView().getItems().get(getIndex());
+                    statusLabel.setText(apptmt.getStatus());
+                    if (apptmt.getStatus().equals("success")) {
+                        statusLabel.setStyle("-fx-font-weight: bold; -fx-text-fill: white; -fx-background-color: green;");
+                    } else {
+                        statusLabel.setStyle("-fx-font-weight: bold; -fx-text-fill: white; -fx-background-color: yellow;");
+                    }
+                    HBox buttons = new HBox();
+                    buttons.setSpacing(10);
+                    buttons.getChildren().addAll(paybutton, statusLabel);
+                    setGraphic(buttons);
+                }
+            }
+        });
+    }
+
+
+
+    private void payappointment(Appointment appointment) throws IOException {
+        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("../view/payment1.fxml")));
+        Scene scene = new Scene(root);
+        Stage stage = new Stage();
+
+        stage.setScene(scene);
+        stage.initStyle(StageStyle.UTILITY);
+        stage.show();
+        stage.centerOnScreen();
     }
 
 
@@ -149,7 +201,7 @@ public class PatientAppointmentController implements Initializable {
         try {
             Connection conn = DriverManager.getConnection(DB_URL, USERNAME, PASS);
 
-            String query = "SELECT id, hospital, doctor FROM appointment";
+            String query = "SELECT id, hospital, doctor, status FROM appointment";
             PreparedStatement preparedStatement = conn.prepareStatement(query);
             ResultSet resultSet = preparedStatement.executeQuery();
 
@@ -158,6 +210,8 @@ public class PatientAppointmentController implements Initializable {
                         resultSet.getInt("id")
                         , resultSet.getString("hospital")
                         , resultSet.getString("doctor")
+                        , resultSet.getString("status")
+
                 );
                 appointmentlist.getItems().add(appointment);
             }
@@ -166,4 +220,5 @@ public class PatientAppointmentController implements Initializable {
             e.printStackTrace();
         }
     }
+
 }
