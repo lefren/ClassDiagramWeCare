@@ -54,7 +54,7 @@ public class Payment2 {
             int updatedRows = updatestmt.executeUpdate();
 
             if (updatedRows > 0) {
-                return new Appointment(id, null, null, status);
+                return new Appointment(id, null,null, status, null);
             }
 
             updatestmt.close();

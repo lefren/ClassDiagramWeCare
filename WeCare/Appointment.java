@@ -1,13 +1,14 @@
 package OOP.JFRAME;
 
-public class Appointment {
+public class Appointment extends Apptmt{
     private int id;
     private String hospitalName;
     private String doctorName;
     private String status;
 
 
-    public Appointment(int id, String hospitalName, String doctorName, String status) {
+    public Appointment(int id, String hospitalName, String doctorName, String status, String patientName) {
+        super(patientName, doctorName, hospitalName);
         this.id = id;
         this.hospitalName = hospitalName;
         this.doctorName = doctorName;

@@ -2,7 +2,6 @@
 package OOP.JFRAME.controller;
 
 import OOP.JFRAME.Appointment;
-import OOP.JFRAME.Apptmt;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -33,13 +32,15 @@ public class AdminAppointmentListController implements Initializable {
     @FXML
     private Button doctorbutton;
     @FXML
-    private TableView<Apptmt> tableviewid;
+    private TableView<Appointment> tableviewid;
     @FXML
-    private TableColumn<Apptmt, String> doctornameid;
+    private TableColumn<Appointment, Integer> numberid;
     @FXML
-    private TableColumn<Apptmt, String> hospitalnameid;
+    private TableColumn<Appointment, String> doctornameid;
     @FXML
-    private TableColumn<Apptmt, String> patientnameid;
+    private TableColumn<Appointment, String> hospitalnameid;
+    @FXML
+    private TableColumn<Appointment, String> patientnameid;
     @FXML
     private TableColumn<Appointment, Void> statusid;
 
@@ -59,17 +60,18 @@ public class AdminAppointmentListController implements Initializable {
     @FXML
     private Button settingsbtn;
 
-    Apptmt apptmt = null;
+    Appointment appointment = null;
     final String DB_URL = "jdbc:mysql://localhost/projectoop?serverTimezone=UTC";
     final String USERNAME = "root";
     final String PASS = "";
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle){
-        loadDate();
+        loadAppointments();
 
-        hospitalnameid.setCellValueFactory(new PropertyValueFactory<>("hospitalname"));
-        doctornameid.setCellValueFactory(new PropertyValueFactory<>("doctorname"));
+        numberid.setCellValueFactory(new PropertyValueFactory<>("id"));
+        hospitalnameid.setCellValueFactory(new PropertyValueFactory<>("hospitalName"));
         patientnameid.setCellValueFactory(new PropertyValueFactory<>("patientname"));
+        doctornameid.setCellValueFactory(new PropertyValueFactory<>("doctorName"));
 
         statusid.setCellFactory(param -> new TableCell<>() {
 
@@ -114,23 +116,26 @@ public class AdminAppointmentListController implements Initializable {
         }
     }
 
-    private void loadDate() {
-
+    private void loadAppointments() {
         try {
             Connection conn = DriverManager.getConnection(DB_URL, USERNAME, PASS);
+
             String query = "SELECT * FROM appointment";
-            PreparedStatement statement = conn.prepareStatement(query);
-            ResultSet result = statement.executeQuery();
-            while (result.next()){
-                Apptmt apptmt1 = new Apptmt(
-                        result.getString("hospital"),
-                        result.getString("doctor"),
-                        result.getString("patient")
+            PreparedStatement preparedStatement = conn.prepareStatement(query);
+            ResultSet resultSet = preparedStatement.executeQuery();
+
+            while (resultSet.next()) {
+                Appointment appointment = new Appointment(
+                        resultSet.getInt("id")
+                        , resultSet.getString("hospital")
+                        , resultSet.getString("doctor")
+                        , resultSet.getString("status")
+                        , resultSet.getString("patient")
                 );
-                tableviewid.getItems().add(apptmt1);
+                tableviewid.getItems().add(appointment);
             }
             conn.close();
-        } catch (SQLException e) {
+        } catch(SQLException e){
             e.printStackTrace();
         }
     }

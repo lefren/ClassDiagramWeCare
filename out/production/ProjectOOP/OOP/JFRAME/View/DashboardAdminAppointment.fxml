@@ -128,10 +128,11 @@
                             <center>
                                 <TableView fx:id="tableviewid" prefHeight="539.0" prefWidth="638.0" BorderPane.alignment="CENTER">
                                     <columns>
-                                        <TableColumn fx:id="hospitalnameid" prefWidth="240.0000365972519" text="Hospital Name" />
-                                        <TableColumn fx:id="patientnameid" prefWidth="227.19992065429688" text="Patient Name" />
-                                        <TableColumn fx:id="doctornameid" prefWidth="239.20004272460938" text="Doctor Name" />
-                                        <TableColumn fx:id="statusid" prefWidth="165.60003662109375" text="Status" />
+                              <TableColumn fx:id="numberid" prefWidth="68.80003201961517" text="No" />
+                                        <TableColumn fx:id="hospitalnameid" prefWidth="226.4000015258789" text="Hospital Name" />
+                                        <TableColumn fx:id="patientnameid" prefWidth="184.0" text="Patient Name" />
+                                        <TableColumn fx:id="doctornameid" minWidth="0.0" prefWidth="235.99990844726562" text="Doctor Name" />
+                                        <TableColumn fx:id="statusid" prefWidth="154.40008544921875" text="Status" />
                                     </columns>
                                 </TableView>
                             </center>

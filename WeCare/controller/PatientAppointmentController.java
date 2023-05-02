@@ -210,7 +210,8 @@ public class PatientAppointmentController implements Initializable {
                         resultSet.getInt("id")
                         , resultSet.getString("hospital")
                         , resultSet.getString("doctor")
-                        , resultSet.getString("status")
+                        , resultSet.getString("status"),
+                        null
 
                 );
                 appointmentlist.getItems().add(appointment);
