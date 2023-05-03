@@ -6,16 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1aaec7a7-6e4d-4478-8b85-d2996436fbe4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WeCare/Appointment.java" beforeDir="false" afterPath="$PROJECT_DIR$/WeCare/Appointment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WeCare/View/DashboardAdminAppointment.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/WeCare/View/DashboardAdminAppointment.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WeCare/controller/AdminAppointmentListController.java" beforeDir="false" afterPath="$PROJECT_DIR$/WeCare/controller/AdminAppointmentListController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WeCare/controller/PatientAppointmentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/WeCare/controller/PatientAppointmentController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WeCare/controller/Payment2.java" beforeDir="false" afterPath="$PROJECT_DIR$/WeCare/controller/Payment2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/Appointment.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/Appointment.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/View/DashboardAdminAppointment.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/View/DashboardAdminAppointment.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/controller/AdminAppointmentListController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/controller/AdminAppointmentListController$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/controller/AdminAppointmentListController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/controller/AdminAppointmentListController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/controller/PatientAppointmentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/controller/PatientAppointmentController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/controller/Payment2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectOOP/OOP/JFRAME/controller/Payment2.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
