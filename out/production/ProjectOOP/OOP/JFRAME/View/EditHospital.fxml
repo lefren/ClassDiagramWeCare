@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="OOP.JFRAME.controller.EditHospitalController">
+    <center>
+        <VBox prefHeight="360.0" prefWidth="600.0" spacing="10.0" BorderPane.alignment="CENTER">
+            <children>
+                <Label text="Update Hospital Information ">
+                    <font>
+                        <Font name="System Bold" size="18.0" />
+                    </font>
+                </Label>
+                <Label text="Hospital Name" textFill="#2d3539">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="hospitalnameid" promptText="New Hospital Name" style="-fx-border-color: #008081; -fx-border-radius: 20; -fx-background-color: transparent;" />
+                <Label text="Hospital Address" textFill="#2d3539">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="hospitaladdressid" promptText="New Hospital Address" style="-fx-border-color: #008081; -fx-border-radius: 20; -fx-background-color: transparent;" />
+                <Label text="Hospital Telephone Number" textFill="#2d3539">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="hospitalnumber" promptText="New Hospital Number" style="-fx-border-color: #008081; -fx-border-radius: 20; -fx-background-color: transparent;" />
+                <Label />
+                <HBox prefHeight="30.0" prefWidth="600.0" spacing="40.0">
+                    <children>
+                        <Button fx:id="addbtnid" mnemonicParsing="false" onAction="#addbtn" prefHeight="37.0" prefWidth="155.0" style="-fx-background-color: #008081; -fx-background-radius: 20;" text="Update Hospital" textFill="WHITE" />
+                        <Button fx:id="cancelbtnid" mnemonicParsing="false" onAction="#cancelbtn" prefHeight="37.0" prefWidth="155.0" style="-fx-border-radius: 20; -fx-background-color: transparent; -fx-border-color: #008081;" text="Cancel" />
+                    </children>
+                </HBox>
+            </children>
+            <padding>
+                <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+            </padding>
+        </VBox>
+    </center>
+</BorderPane>

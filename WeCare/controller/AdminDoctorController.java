@@ -105,7 +105,11 @@ public class AdminDoctorController implements Initializable {
 
                 editButton.setOnAction(event -> {
                     Doctor doctor = getTableView().getItems().get(getIndex());
-                    updatedoctor(doctor);
+                    try {
+                        updatedoctor(doctor);
+                    } catch (IOException e) {
+                        throw new RuntimeException(e);
+                    }
                 });
             }
 
@@ -175,8 +179,15 @@ public class AdminDoctorController implements Initializable {
         }
     }
 
-    private void updatedoctor(Doctor doctor) {
+    private void updatedoctor(Doctor doctor) throws IOException {
+        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("../view/EditDoctor.fxml")));
+        Scene scene = new Scene(root);
+        Stage stage = new Stage();
 
+        stage.setScene(scene);
+        stage.initStyle(StageStyle.UTILITY);
+        stage.show();
+        stage.centerOnScreen();
     }
 
     @FXML

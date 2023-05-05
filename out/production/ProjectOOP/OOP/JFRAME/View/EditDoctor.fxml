@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="648.0" prefWidth="718.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="OOP.JFRAME.controller.EditDoctorController">
+    <center>
+        <VBox prefHeight="527.0" prefWidth="658.0" spacing="10.0" style="-fx-background-color: #fff; -fx-background-radius: 10;" BorderPane.alignment="CENTER">
+            <children>
+                <Label text="Update Doctor Information">
+                    <font>
+                        <Font name="System Bold" size="18.0" />
+                    </font>
+                </Label>
+                <Label text="Doctor Name" textFill="#2d3539">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="doctornameid" promptText="New Doctor Name" style="-fx-background-color: transparent; -fx-border-color: #008081; -fx-border-radius: 20;" />
+                <Label text="STR Number" textFill="#2d3539">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="strnumberid" promptText="Currect STR Number" style="-fx-background-color: transparent; -fx-border-color: #008081; -fx-border-radius: 20;" />
+                <Label text="Hospital" textFill="#2d3539">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <ComboBox fx:id="hospitalid" prefHeight="26.0" prefWidth="754.0" promptText="Hospital Name" style="-fx-background-color: transparent; -fx-border-color: #008081; -fx-border-radius: 20;" />
+                <Label text="Phone Number" textFill="#2d3539">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="doctorphoneid" promptText="New Phone Number" style="-fx-background-color: transparent; -fx-border-color: #008081; -fx-border-radius: 20;" />
+                <Label text="Experience" textFill="#2d3539">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="doctorexperience" promptText="New Doctor Experience" style="-fx-background-color: transparent; -fx-border-color: #008081; -fx-border-radius: 20;" />
+                <Label text="Password" textFill="#2d3539">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <PasswordField fx:id="doctorpassword" promptText="Password" style="-fx-background-color: transparent; -fx-border-color: #008081; -fx-border-radius: 20;" />
+                <Label text="Confirm Password" textFill="#2d3539">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <PasswordField fx:id="doctorconfirmpassword" promptText="Confirm Password" style="-fx-background-color: transparent; -fx-border-color: #008081; -fx-border-radius: 20;" />
+                <Label textFill="#2d3539">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <HBox prefHeight="100.0" prefWidth="200.0" spacing="40.0">
+                    <children>
+                        <Button fx:id="docbtnregister" mnemonicParsing="false" onAction="#docbtnupd" prefHeight="37.0" prefWidth="155.0" style="-fx-background-color: #008081; -fx-background-radius: 20;" text="Update Information" textFill="WHITE" />
+                        <Button fx:id="btncancel" mnemonicParsing="false" onAction="#docbtncancel" prefHeight="37.0" prefWidth="155.0" style="-fx-background-color: transparent; -fx-border-color: #008081; -fx-border-radius: 20;" text="Cancel" textFill="#2d3539" />
+                    </children>
+                </HBox>
+            </children>
+            <BorderPane.margin>
+                <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+            </BorderPane.margin>
+        </VBox>
+    </center>
+</BorderPane>

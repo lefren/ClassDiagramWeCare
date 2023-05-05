@@ -40,24 +40,6 @@
                                 <Font size="14.0" />
                             </font>
                         </Button>
-                        <Label prefHeight="17.0" prefWidth="281.0" text="List" textFill="#2e2e2e">
-                            <padding>
-                                <Insets left="8.0" />
-                            </padding>
-                            <font>
-                                <Font size="14.0" />
-                            </font>
-                        </Label>
-                        <Button fx:id="doctorlistbutton" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#doctorlistbtn" prefHeight="25.0" prefWidth="177.0" style="-fx-background-color: transparent;" text="👨‍⚕️ Doctor List" textFill="#fdfefc">
-                            <font>
-                                <Font size="14.0" />
-                            </font>
-                        </Button>
-                        <Button fx:id="hospitallistbutton" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#hospitallistbtn" prefHeight="25.0" prefWidth="329.0" style="-fx-background-color: transparent;" text="🏥 Hospital List" textFill="#fdfefc">
-                            <font>
-                                <Font size="14.0" />
-                            </font>
-                        </Button>
                     </children>
                     <padding>
                         <Insets left="5.0" right="5.0" />

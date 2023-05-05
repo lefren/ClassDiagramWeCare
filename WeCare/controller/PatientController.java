@@ -45,28 +45,6 @@ public class PatientController {
     }
 
     @FXML
-    void doctorlistbtn(ActionEvent event)throws IOException {
-        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("../view/dashboardpatientdoctor.fxml")));
-        Scene scene = new Scene(root);
-
-        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        stage.setScene(scene);
-        stage.show();
-        stage.centerOnScreen();
-    }
-
-    @FXML
-    void hospitallistbtn(ActionEvent event)throws IOException {
-        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("../view/dashboardpatienthospital.fxml")));
-        Scene scene = new Scene(root);
-
-        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        stage.setScene(scene);
-        stage.show();
-        stage.centerOnScreen();
-    }
-
-    @FXML
     void overviewpatientbtn(ActionEvent event)throws IOException {
         Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("../view/dashboardpatient.fxml")));
         Scene scene = new Scene(root);

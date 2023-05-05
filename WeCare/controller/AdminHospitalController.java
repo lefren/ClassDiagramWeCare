@@ -83,7 +83,11 @@ public class AdminHospitalController implements Initializable {
 
                 editButton.setOnAction(event -> {
                     Hospital hospital = getTableView().getItems().get(getIndex());
-                    edithospital(hospital);
+                    try {
+                        edithospital(hospital);
+                    } catch (IOException e) {
+                        throw new RuntimeException(e);
+                    }
                 });
             }
 
@@ -135,8 +139,15 @@ public class AdminHospitalController implements Initializable {
         }
     }
 
-    private void edithospital(Hospital hospital){
+    private void edithospital(Hospital hospital) throws IOException {
+        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("../view/edithospital.fxml")));
+        Scene scene = new Scene(root);
+        Stage stage = new Stage();
 
+        stage.setScene(scene);
+        stage.initStyle(StageStyle.UTILITY);
+        stage.show();
+        stage.centerOnScreen();
     }
 
     private void deletehospital(Hospital hospital) {
